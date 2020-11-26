@@ -125,6 +125,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Participant_Login.aspx" />
+    <Content Include="Participant_Login_Stylesheet.css" />
+    <Content Include="QuizMain.css" />
+    <Content Include="Quiz_Main.aspx" />
     <Content Include="signup.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Quiz_Landing_Page.aspx" />
@@ -160,6 +164,7 @@
     <Content Include="Site.Master" />
     <Content Include="empyr_login_stylesheet.css" />
     <Content Include="quiz_landing_page.css" />
+    <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -199,6 +204,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Participant_Login.aspx.cs">
+      <DependentUpon>Participant_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Participant_Login.aspx.designer.cs">
+      <DependentUpon>Participant_Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quiz_Landing_Page.aspx.cs">
       <DependentUpon>Quiz_Landing_Page.aspx</DependentUpon>
@@ -206,6 +218,13 @@
     </Compile>
     <Compile Include="Quiz_Landing_Page.aspx.designer.cs">
       <DependentUpon>Quiz_Landing_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz_Main.aspx.cs">
+      <DependentUpon>Quiz_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz_Main.aspx.designer.cs">
+      <DependentUpon>Quiz_Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -220,6 +239,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

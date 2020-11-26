@@ -23,12 +23,12 @@
     <div class="v0_111">
         <div class="v0_112"></div>
         <div class="name"></div>
-        <asp:TextBox ID="emp_name" name="emp_name" placeholder="Enter employee name" class="v0_114" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Participant_name" name="Participant_name" placeholder="Enter Participant Name" class="v0_114" runat="server"></asp:TextBox>
     </div>
     <div class="v0_115">
         <div class="v0_116"></div>
         <div class="name"></div>
-        <asp:TextBox ID="emp_id" class="v0_118" name="emp_id" placeholder="Enter employee ID" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Participant_Email" class="v0_118" name="Participant_Email" placeholder="Enter Participant Email" runat="server"></asp:TextBox>
     </div>
     <div class="v0_119">
         <div class="v0_120"></div>

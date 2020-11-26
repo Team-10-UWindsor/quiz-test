@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Quiz_Master
 {
-    public partial class Quiz_Landing_Page : System.Web.UI.Page
+    public partial class Participant_Login : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
@@ -18,7 +18,7 @@ namespace Quiz_Master
 
         }
 
-        protected void submit_Click(object sender, EventArgs e)
+        protected void enter_Click(object sender, EventArgs e)
         {
             try
             {
@@ -28,20 +28,20 @@ namespace Quiz_Master
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("Select * from Participant where Participant_Name ='" + Participant_name.Text.Trim() + "' AND Participant_Email='" + Participant_Email.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("Select * from Quiz where Quiz_id ='" + quiz_id.Text.Trim()+"'", con);
 
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('" + dr.GetValue(1).ToString() + "');</script>");
+                        Response.Redirect("Quiz_Landing_Page.aspx");
                     }
 
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Credentials')</script>");
+                    Response.Write("<script>alert('Invalid Quiz ID')</script>");
                 }
 
             }
@@ -49,8 +49,7 @@ namespace Quiz_Master
             {
                 Response.Write("<script>alert('" + ex.Message + " ');</script>");
             }
-
-            Response.Redirect("Quiz_Main.aspx");
         }
     }
+    
 }
