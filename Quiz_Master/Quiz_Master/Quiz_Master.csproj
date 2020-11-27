@@ -112,6 +112,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="Dashboard.css" />
     <Content Include="Default.aspx" />
     <Content Include="Employer_Login.aspx" />
     <Content Include="favicon.ico" />
@@ -129,6 +131,8 @@
     <Content Include="Participant_Login_Stylesheet.css" />
     <Content Include="QuizMain.css" />
     <Content Include="Quiz_Main.aspx" />
+    <Content Include="Reports.aspx" />
+    <Content Include="reports.css" />
     <Content Include="signup.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Quiz_Landing_Page.aspx" />
@@ -164,7 +168,12 @@
     <Content Include="Site.Master" />
     <Content Include="empyr_login_stylesheet.css" />
     <Content Include="quiz_landing_page.css" />
+    <Content Include="v4505_731.png" />
+    <Content Include="v4505_900.png" />
+    <Content Include="view_quizes.css" />
     <Content Include="Test.aspx" />
+    <Content Include="v4505_726.png" />
+    <Content Include="ViewQuiz.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -186,6 +195,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -226,6 +242,13 @@
     <Compile Include="Quiz_Main.aspx.designer.cs">
       <DependentUpon>Quiz_Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +269,13 @@
     </Compile>
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuiz.aspx.cs">
+      <DependentUpon>ViewQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewQuiz.aspx.designer.cs">
+      <DependentUpon>ViewQuiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
