@@ -16,14 +16,6 @@
         
             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
 
-            <asp:Table ID="Table1" runat="server"></asp:Table>
-            <tr>
-                <td>
-                    <asp:RadioButton ID="RadioButton1" runat="server" Text="hello" />
-
-                </td>
-            </tr>
-        
     </form>
 </body>
 </html>

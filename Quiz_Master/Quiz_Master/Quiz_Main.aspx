@@ -30,10 +30,6 @@
         <span class="v0_180">EMP012345</span>
 
 
-        <div class="v0_159">
-            <asp:PlaceHolder ID="PlaceHolder1"  runat="server"></asp:PlaceHolder>
-
-        </div>
 
 
         <!--   <div>
@@ -94,6 +90,12 @@
             <ol id="list"></ol>
          -->
 
+         <span class="v0_190">
+            <asp:PlaceHolder ID="PlaceHolder1"  runat="server"></asp:PlaceHolder>
+
+        </span>
+
+
         <span class="v0_192">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v0_193">The difference between simple interest and compound on Rs. 1200 for one year at 10% per annum reckoned half-yearly is ?</span>
         <span class="v0_194">At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1348.32 in 2 years?</span>
@@ -122,8 +124,12 @@
         <span class="v0_214">3.</span>
         <span class="v0_215">4.</span>
         <span class="v0_216">5.</span>
+
         
     </div>
+
+        
+       
  
 
 </form>

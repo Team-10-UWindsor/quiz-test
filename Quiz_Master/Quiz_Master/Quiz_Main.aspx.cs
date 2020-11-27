@@ -14,43 +14,76 @@ namespace Quiz_Master
     public partial class Quiz_Main : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-        StringBuilder table = new StringBuilder();
+        StringBuilder t1 = new StringBuilder();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
-                SqlConnection con = new SqlConnection(strcon);
-                con.Open();
-                SqlCommand cmd = new SqlCommand("Select * from Question ", con);
-                //SqlCommand cmd1 = new SqlCommand("Select * from Options ", con);
-
-
-                //SqlDataAdapter sdr = new SqlDataAdapter(cmd);
-                //SqlDataAdapter sdr1 = new SqlDataAdapter(cmd1);
-                SqlDataReader rd = cmd.ExecuteReader();
-                table.Append("<table border='1'>");
-                table.Append("<tr><th>Question 1 </th></tr>");
-                table.Append("<tr><th>-------------------------------------------------------------------------------------------------------------------- </th></tr>");
-
-                if (rd.HasRows)
+                if (!Page.IsPostBack)
                 {
-                    while (rd.Read())
+                    SqlConnection con = new SqlConnection(strcon);
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Select * from Question ", con);
+                    SqlCommand cmd1 = new SqlCommand("Select * from Options ", con);
+
+
+                    //SqlDataAdapter sdr = new SqlDataAdapter(cmd);
+                    //SqlDataAdapter sdr1 = new SqlDataAdapter(cmd1);
+
+                    SqlDataReader rd = cmd.ExecuteReader();
+
+                    t1.Append("<table border='0' >");
+                    t1.Append("<tr><th>Question 1 </th></tr>");
+
+                    StringBuilder table = new StringBuilder();
+
+                    if (rd.HasRows)
                     {
-                        table.Append("<tr>");
-                        table.Append("<td>" + rd[1] + "</td>");
-                        table.Append("</tr>");
-                        //  Response.Write("<script>alert('" + rd.GetValue(1).ToString() + "');</script>");
+                        while (rd.Read())
+                        {
+                            table.Append("<tr>");
+                            table.Append("<td>" + rd[1] + "</td>");
+                            table.Append("</br>");
+                            table.Append("</br>");
+                            table.Append("</tr>");
+                            table.Append("<td></td>");
+                            //  Response.Write("<script>alert('" + rd.GetValue(1).ToString() + "');</script>");
+                        }
+
+                    }
+                    rd.Close();
+                    SqlDataReader rd1 = cmd1.ExecuteReader();
+                    if (rd1.HasRows)
+                    {
+                        while (rd1.Read())
+                        {
+                            table.Append("<tr>");
+
+                            table.Append("<td>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton1"" name= ""option"" runat=""server"" >");
+                            table.Append("</td>");
+                            table.Append(@"<label for=""RadioButton1"">" + rd1[1] + "</label><br>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton2"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""RadioButton2"">" + rd1[2] + "</label><br>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton3"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""RadioButton3"">" + rd1[3] + "</label><br>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton4"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""RadioButton4"">" + rd1[4] + "</label><br>");
+                            table.Append("</tr>");
+                            //  Response.Write("<script>alert('" + rd.GetValue(1).ToString() + "');</script>");
+                        }
+
                     }
 
+
+                    t1.Append("</table>");
+
+                    PlaceHolder1.Controls.Add(new Literal { Text = table.ToString() });
+
+
+
+
                 }
-
-                table.Append("</table>");
-
-                PlaceHolder1.Controls.Add(new Literal { Text = table.ToString() });
-
-                rd.Close();
-
-
             }
 
         }

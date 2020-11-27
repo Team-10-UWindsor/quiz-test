@@ -20,11 +20,11 @@ namespace Quiz_Master
             if (!Page.IsPostBack)
             {
                 if (!Page.IsPostBack)
-                {
+                {   
                     SqlConnection con = new SqlConnection(strcon);
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("Select * from Question ", con);
-                    SqlCommand cmd1 = new SqlCommand("Select * from Options ", con);
+                    SqlCommand cmd = new SqlCommand("Select * from Question where Question_id=2", con);
+                    SqlCommand cmd1 = new SqlCommand("Select * from Options  where Question_id=2", con);
 
 
                     //SqlDataAdapter sdr = new SqlDataAdapter(cmd);
@@ -41,11 +41,12 @@ namespace Quiz_Master
                     {
                         while (rd.Read())
                         {
-                            table.AppendLine(@"<tr>");
-                           // table.AppendLine(@"<td>{0} Question</td></tr>");
-                            table.AppendLine(@"<td><input type=""radio"" id=""rb1_{2}"" name=""options{2}"" value=""A""> A) <label for=""rb1_{2}"">{3}</label></td>");
+                            table.Append("<tr>");
                             table.Append("<td>" + rd[1] + "</td>");
+                            table.Append("</br>");
+                            table.Append("</br>");
                             table.Append("</tr>");
+                            table.Append("<td></td>");
                             //  Response.Write("<script>alert('" + rd.GetValue(1).ToString() + "');</script>");
                         }
 
@@ -57,13 +58,17 @@ namespace Quiz_Master
                         while (rd1.Read())
                         {
                             table.Append("<tr>");
+                            
                             table.Append("<td>");
-                            table.AppendLine(@"<asp:RadioButton ID='RadioButton1' runat='server' Text='" + rd1[1] + "'/>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton1"" name= ""option"" runat=""server"" >");
                             table.Append("</td>");
-                            //table.Append("<td>" + rd1[1] + "</td>");
-                            table.Append("<td>" + rd1[2] + "</td>");
-                            table.Append("<td>" + rd1[3] + "</td>");
-                            table.Append("<td>" + rd1[4] + "</td>");
+                            table.Append(@"<label for=""RadioButton1"">" + rd1[1] + "</label><br>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton2"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""RadioButton2"">" + rd1[2] + "</label><br>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton3"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""RadioButton3"">" + rd1[3] + "</label><br>");
+                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton4"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""RadioButton4"">" + rd1[4] + "</label><br>");
                             table.Append("</tr>");
                             //  Response.Write("<script>alert('" + rd.GetValue(1).ToString() + "');</script>");
                         }
