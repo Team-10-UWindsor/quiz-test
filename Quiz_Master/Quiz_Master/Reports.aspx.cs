@@ -24,8 +24,9 @@ namespace Quiz_Master
                 SqlDataAdapter sda = new SqlDataAdapter("Select Participant.Participant_Name, [dbo].[Evaluation].Percentage from Evaluation Inner Join Participant On [dbo].[Participant].Participant_Id =[dbo].[Evaluation].Participant_Id",con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                Repeater1.DataSource = dt;
-                Repeater1.DataBind();
+                // Repeater Rpt1 = (Repeater)Master.FindControl("Repeater_1");
+                Repeater_1.DataSource = dt;
+                Repeater_1.DataBind();
 
 
             }

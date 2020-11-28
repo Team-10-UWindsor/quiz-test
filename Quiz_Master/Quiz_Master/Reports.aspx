@@ -50,30 +50,28 @@
                   -->
                   
 
-                  <div class="v4505_698">
-                                        <table>
-                      <tr>
+                  <div class="v4505_698" style="overflow:scroll;height:80px;width:100%;overflow:auto">>  </div>
+                      <table>
+                      <tr class="v4505_697">
                           <th class="v4505_700">Participant Name</th>
                           <th class="v4505_701">Score</th>
                       </tr>
-                                            </table>
-                      <asp:Repeater ID="Repeater1" runat="server">
-                        <ItemTemplate>
-                            <table>
-                      <tr> 
-                            
-                            <td><%#Eval("Participant_Name")%></td> 
-                            <td><%#Eval("Percentage")%></td> 
-                      </tr>
-                  </table>
-                    </ItemTemplate>
-                                            </asp:Repeater> 
-                  </div>
+                       </table>
+                      <asp:Repeater ID="Repeater_1" runat="server">
+                          <ItemTemplate>
+                              <table class="v4505_702">
+                                  <tr>
+                                      <td><%#Eval("Participant_Name")%></td>
+                                      <td ><%#Eval("Percentage")%></td>
+                                  </tr>
+                               </table>
+                            </ItemTemplate>
+                     </asp:Repeater>               
 
- 
+                  <!--
                   <div class="v4505_697"></div>         
                  
-
+                  -->
                   </div>
               <div class="v4505_722"></div>
           </div>

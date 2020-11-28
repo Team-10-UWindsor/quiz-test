@@ -65,13 +65,14 @@
             <asp:RadioButton ID="quiz" GroupName="dashboard" runat="server" />
             </div>
             <label class="v4505_386" for="generate_quiz">Generate Quiz</label><br>
+            <asp:DropDownList ID="SelectOrg" runat="server" Enabled="false"></asp:DropDownList>
             <div class="v4505_729">
-            <asp:RadioButton ID="create_new_quiz" class="" runat="server" name="createquiz" value="create_new_quiz"/>
+            <asp:RadioButton ID="create_new_quiz" runat="server" GroupName="createquiz" />
             </div>   
  
             <label class="v4505_401" for="create_new_quiz">Create New Quiz</label><br>
         <div class="v4505_730">
-            <asp:RadioButton ID="fetch_previous_quiz" class="" runat="server" name="createquiz" value="fetch_previous_quiz"/>
+            <asp:RadioButton ID="fetch_previous_quiz" runat="server" GroupName="createquiz" />
             
          </div>
          <label class="v4505_402" for="fetch_previous_quiz">Fetch Previous Quiz</label><br>
