@@ -134,8 +134,8 @@
     <Content Include="Generate_Quiz.aspx" />
     <Content Include="QuizMain.css" />
     <Content Include="Quiz_Main.aspx" />
-    <Content Include="Reports.aspx" />
     <Content Include="reports.css" />
+    <None Include="Properties\PublishProfiles\QuizMaster20201128022209 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Quiz_Landing_Page.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -260,13 +260,6 @@
     </Compile>
     <Compile Include="Quiz_Main.aspx.designer.cs">
       <DependentUpon>Quiz_Main.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Reports.aspx.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reports.aspx.designer.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sign_Up.aspx.cs">
       <DependentUpon>Sign_Up.aspx</DependentUpon>
