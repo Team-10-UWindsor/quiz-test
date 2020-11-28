@@ -9,11 +9,13 @@
     <link href="generate_quiz.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
+    
+<div class="v4505_424">
     <form runat="server">
 
 
-<div class="v4505_424">
     <div class="v4505_425">
         <div class="v4505_426"></div>
         <div class="v4505_427"></div>
@@ -44,12 +46,6 @@
             <asp:Button ID="done" class="v4505_500" runat="server" Text="Done" OnClick="done_Click" />
             
         </div></div>
-    <div class="v4505_487">
-        <div class="v4505_488">
-            <div class="v4505_489"></div>
-            <asp:Button ID="new_ques" runat="server" class="v4505_490" Text="Enter New Question" />
-            
-            </div></div>
     <div class="v4505_505">
         <div class="v4505_506"></div>
         <div class="name"></div>
@@ -85,8 +81,8 @@
     <span class="v4505_483">Quiz ID:</span>
     <span class="v4505_486">02345</span>
     <div class="v4505_725"></div>
-</div>
             </form>
+    </div>
 </body>
 </html>
 

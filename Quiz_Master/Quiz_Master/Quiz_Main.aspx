@@ -11,9 +11,8 @@
     <title>Quiz</title>
 </head>
 <body>
-    <form runat="server">
-
     <div class="v0_159">
+        <form runat="server">
         <div class="v0_160">
             <div class="v0_161"></div>
             <div class="v0_162"></div>
@@ -62,15 +61,14 @@
         <div class="v0_181">
             <div class="v0_182">
                 <div class="v0_183"></div>
-                <asp:Button ID="done" runat="server" class="v0_184" Text="Done"   />
+                <asp:Button ID="done" runat="server" class="v0_184" Text="Done"/>
             </div>
             <div class="v0_185">
                 <div class="v0_186"></div>
-                <asp:Button ID="next" runat="server" class="v0_187" Text="Next"   />
+                <asp:Button ID="next" runat="server" class="v0_187" Text="Next"/>
             </div>
-
         </div>
-
+      
         <div class="v4535_6"></div>
         <div class="v4536_124"></div>
         <asp:Button ID="prev" runat="server" Text="Prev"  class="v4536_126" />
@@ -78,15 +76,6 @@
         <span class="v0_189"><asp:Label ID ="question_no" runat="server">Question 1 of 5</asp:Label></span>
 
         <!--<span class="v0_190">Question 1:</span>-->
-
-      
-
-        
-
-
-
-
-
         <!--
             <ol id="list"></ol>
          -->
@@ -127,13 +116,7 @@
         <span class="v0_215">4.</span>
         <span class="v0_216">5.</span>
 
-        
+      </form>  
     </div>
-
-        
-       
- 
-
-</form>
 </body>
 </html>

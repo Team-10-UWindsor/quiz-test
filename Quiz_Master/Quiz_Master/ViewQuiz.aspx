@@ -10,8 +10,8 @@
     <title>View Quizes</title>
     </head>
 <body>
-    <form runat="server">
- <div class="v4505_608">
+    <div class="v4505_608">
+    <form runat="server"> 
         <div class="v4505_609">
             <div class="v4505_610"></div>
             <div class="v4505_611"></div>
@@ -23,15 +23,16 @@
         <span class="v4505_627">Employer ID</span>
         <label class="v4505_628" for="emp_name" id="emp_name">Iron Man</label>
         <label class="v4505_629" for="emp_id" id="emp_id">EMP012345</label>
+        
         <div class="v4505_630">
             <div class="v4505_631">
-                <div class="v4505_632"></div>
-               <!-- <asp:Button ID="next" runat="server" class="v4505_633" Text="Next" />-->
-                
-             </div></div>
+                <div class="v4505_632"></div>                
+               <asp:Button ID="dashboard" runat="server" class="v4505_633" Text="Dashboard" />           
+             </div>
+            </div></form>
       
-            <ul v4505_638 id="list">
-          </ul>
+           <!-- <ul v4505_638 id="list">
+          </ul>-->
          
 
         <span class="v4505_638"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="www.google.com">Quiz 1</asp:HyperLink></span>
@@ -45,8 +46,9 @@
         <div class="name"></div>
         <span class="v4505_650">All Quizes</span>
         <div class="v4505_731"></div>
+        
         </div>
-    </form>
+   
 </body>
 </html>
  

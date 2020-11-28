@@ -9,18 +9,33 @@
     <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
     <link href="dashboard.css" rel="stylesheet" />
     <title>Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sub_radio").hide(600);
+           $("#quiz").click(function () {
+                console.log("click");
+                $("#sub_radio").show(600);
+            });
+            $("#report").click(function () {
+                console.log("click");
+                $("#sub_radio").hide(600);
+            });
+        });
+    </script>
 
-    <script language="C#" runat="server">
+            <script language = "C#" runat = "server" >
 
-        void next_Click(Object Sender, EventArgs e) {
+                void next_Click(Object Sender, EventArgs e) {
 
             if (report.Checked) {
                 Response.Redirect("Reports.aspx");
             }
             else if (quiz.Checked) {
-                Response.Redirect("ViewQuiz.aspx");
+                        if(create_new_quiz.Checked)
+                            Response.Redirect("ViewQuiz.aspx");
             }
-          
+
         }
 
     </script>
@@ -62,20 +77,24 @@
             <label class="v4505_269" for="view_report">View Report</label><br>       
             </div>
             <div class="v4505_387">
-            <asp:RadioButton ID="quiz" GroupName="dashboard" runat="server" />
+            <asp:RadioButton ID="quiz" AutoPostBack="true" GroupName="dashboard" runat="server" />
             </div>
             <label class="v4505_386" for="generate_quiz">Generate Quiz</label><br>
-            <asp:DropDownList ID="SelectOrg" runat="server" Enabled="false"></asp:DropDownList>
+
+
+            <div id="sub_radio" >
             <div class="v4505_729">
-            <asp:RadioButton ID="create_new_quiz" runat="server" GroupName="createquiz" />
+                <asp:RadioButton ID="create_new_quiz" runat="server" GroupName="createquiz" />
             </div>   
- 
             <label class="v4505_401" for="create_new_quiz">Create New Quiz</label><br>
-        <div class="v4505_730">
-            <asp:RadioButton ID="fetch_previous_quiz" runat="server" GroupName="createquiz" />
-            
-         </div>
+            <div class="v4505_730">
+                <asp:RadioButton ID="fetch_previous_quiz" runat="server" GroupName="createquiz"/>
+
+            </div>
          <label class="v4505_402" for="fetch_previous_quiz">Fetch Previous Quiz</label><br>
+            </div>
+
+
         <div class="name"></div>
         <div class="name"></div>        
         <div class="v4505_726"></div>
