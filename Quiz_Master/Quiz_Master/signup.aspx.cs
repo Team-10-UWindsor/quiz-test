@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace Quiz_Master
 {
-    public partial class WebForm3 : System.Web.UI.Page
+    public partial class signup : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)

@@ -261,17 +261,18 @@
 }
 
 .v4539_20 {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
     width: 384px;
-    background: rgba(243,243,243,1);
     position: absolute;
     top: 12px;
-    left: 15px;
+    left: 17px;
     font-family: Arial;
     font-weight: normal;
     font-size: 16px;
     opacity: 1;
     text-align: left;
-    border: 0px none;
     outline: none;
 }
 
