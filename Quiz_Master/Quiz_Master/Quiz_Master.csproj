@@ -240,13 +240,6 @@
       <DependentUpon>Participant_Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Generate_Quiz.aspx.cs">
-      <DependentUpon>Generate_Quiz.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Generate_Quiz.aspx.designer.cs">
-      <DependentUpon>Generate_Quiz.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Quiz_Landing_Page.aspx.cs">
       <DependentUpon>Quiz_Landing_Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
