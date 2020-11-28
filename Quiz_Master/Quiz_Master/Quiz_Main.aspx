@@ -62,19 +62,20 @@
         <div class="v0_181">
             <div class="v0_182">
                 <div class="v0_183"></div>
-
                 <asp:Button ID="done" runat="server" class="v0_184" Text="Done"   />
             </div>
             <div class="v0_185">
                 <div class="v0_186"></div>
                 <asp:Button ID="next" runat="server" class="v0_187" Text="Next"   />
-            </div></div>
+            </div>
+
+        </div>
 
         <div class="v4535_6"></div>
         <div class="v4536_124"></div>
         <asp:Button ID="prev" runat="server" Text="Prev"  class="v4536_126" />
        
-        <span class="v0_189">Question 1 of 5</span>
+        <span class="v0_189"><asp:Label ID ="question_no" runat="server">Question 1 of 5</asp:Label></span>
 
         <!--<span class="v0_190">Question 1:</span>-->
 
@@ -90,8 +91,8 @@
             <ol id="list"></ol>
          -->
 
-         <span class="v0_190">
-            <asp:PlaceHolder ID="PlaceHolder1"  runat="server"></asp:PlaceHolder>
+         <span class="v0_190" >
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server" ></asp:PlaceHolder>
 
         </span>
 
@@ -106,7 +107,8 @@
 
         <span class="v0_201">Time Left:</span>
         
-        <label id="duration" class="v0_202">05:00</label>
+        <label id="duration" class="v0_202">05:00
+        </label>
              <label  class="v0_217">mins</label>
             <!--<span class="v0_202">15:00 mins remaining</span>-->
 

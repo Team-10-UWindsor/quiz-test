@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -14,35 +15,40 @@ namespace Quiz_Master
     public partial class Quiz_Main : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-        StringBuilder t1 = new StringBuilder();
+        StringBuilder table = new StringBuilder();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 if (!Page.IsPostBack)
                 {
-                    SqlConnection con = new SqlConnection(strcon);
+
+                    List< Dictionary < String, String >> quiz = new List<Dictionary<String, String>>();
+                    QuizDS qds = new QuizDS();
+
+                    quiz = qds.fetchQuiz(1);
+
+
+                    /*SqlConnection con = new SqlConnection(strcon);
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("Select * from Question ", con);
-                    SqlCommand cmd1 = new SqlCommand("Select * from Options ", con);
-
-
+                    SqlCommand cmd = new SqlCommand("Select * from Question where Question_id = 1 ", con);
+                    SqlCommand cmd1 = new SqlCommand("Select * from Options where Question_id = 1 ", con);
                     //SqlDataAdapter sdr = new SqlDataAdapter(cmd);
                     //SqlDataAdapter sdr1 = new SqlDataAdapter(cmd1);
 
                     SqlDataReader rd = cmd.ExecuteReader();
 
-                    t1.Append("<table border='0' >");
-                    t1.Append("<tr><th>Question 1 </th></tr>");
-
-                    StringBuilder table = new StringBuilder();
+                    table.Append("<table border='0' width = 2000px>");
 
                     if (rd.HasRows)
                     {
                         while (rd.Read())
                         {
                             table.Append("<tr>");
-                            table.Append("<td>" + rd[1] + "</td>");
+                            table.Append("<td>");
+                            table.Append(@"<label>" + quiz[0
+                                ]["que_des"] + "</label><br>");
+                            table.Append("</td>");
                             table.Append("</br>");
                             table.Append("</br>");
                             table.Append("</tr>");
@@ -60,28 +66,45 @@ namespace Quiz_Master
                             table.Append("<tr>");
 
                             table.Append("<td>");
-                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton1"" name= ""option"" runat=""server"" >");
+                            table.AppendLine(@"<input type=""radio"" ID=""optionA"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""optionA"">" + rd1[1] + "</label><br>");
                             table.Append("</td>");
-                            table.Append(@"<label for=""RadioButton1"">" + rd1[1] + "</label><br>");
-                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton2"" name= ""option"" runat=""server"" >");
-                            table.Append(@"<label for=""RadioButton2"">" + rd1[2] + "</label><br>");
-                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton3"" name= ""option"" runat=""server"" >");
-                            table.Append(@"<label for=""RadioButton3"">" + rd1[3] + "</label><br>");
-                            table.AppendLine(@"<input type=""radio"" ID=""RadioButton4"" name= ""option"" runat=""server"" >");
-                            table.Append(@"<label for=""RadioButton4"">" + rd1[4] + "</label><br>");
+
+                            table.Append("</tr>");
+
+                            table.Append("<tr>");
+                            table.Append("<td>");
+                            table.AppendLine(@"<input type=""radio"" ID=""optionB"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""optionB"">" + rd1[2] + "</label><br>");
+                            table.Append("</td>");
+
+                            table.Append("<tr>");
+                            table.Append("<td>");
+                            table.AppendLine(@"<input type=""radio"" ID=""optionC"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""optionC"">" + rd1[3] + "</label><br>");
+                            table.Append("</td>");
+
+                            table.Append("<tr>");
+                            table.Append("<td>");
+                            table.AppendLine(@"<input type=""radio"" ID=""optionD"" name= ""option"" runat=""server"" >");
+                            table.Append(@"<label for=""optionD"">" + rd1[4] + "</label><br>");
+                            table.Append("</td>");
                             table.Append("</tr>");
                             //  Response.Write("<script>alert('" + rd.GetValue(1).ToString() + "');</script>");
                         }
 
                     }
+                    rd1.Close();
 
+                    cmd.Dispose();
+                    cmd1.Dispose();
 
-                    t1.Append("</table>");
+                    table.Append("</table>");
 
                     PlaceHolder1.Controls.Add(new Literal { Text = table.ToString() });
 
-
-
+                    con.Close();
+                    */
 
                 }
             }

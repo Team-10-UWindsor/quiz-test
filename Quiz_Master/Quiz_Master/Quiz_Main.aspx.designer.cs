@@ -51,6 +51,15 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.Button prev;
 
         /// <summary>
+        /// question_no control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label question_no;
+
+        /// <summary>
         /// PlaceHolder1 control.
         /// </summary>
         /// <remarks>

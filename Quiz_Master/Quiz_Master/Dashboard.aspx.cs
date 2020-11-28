@@ -12,6 +12,7 @@ namespace Quiz_Master
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
 
         protected void next_Click(object sender, EventArgs e)
