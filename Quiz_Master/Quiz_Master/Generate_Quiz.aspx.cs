@@ -13,5 +13,10 @@ namespace Quiz_Master
         {
 
         }
+
+        protected void done_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

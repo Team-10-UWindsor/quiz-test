@@ -326,8 +326,10 @@
 }
 
 .v4505_504 {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
     width: 76px;
-    background: rgba(32,74,99,1);
     color: mintcream;
     position: absolute;
     top: 4px;
@@ -337,8 +339,8 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
-    border: 0px none;
     outline: none;
+    height: 22px;
 }
 
 .v4505_487 {
