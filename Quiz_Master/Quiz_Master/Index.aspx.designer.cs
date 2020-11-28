@@ -11,7 +11,7 @@ namespace Quiz_Master
 {
 
 
-    public partial class Index
+    public partial class index
     {
 
         /// <summary>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Quiz_Master
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class index : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,7 @@ namespace Quiz_Master
 
         protected void Employer_Login_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Employer_Login.aspx")
+            Response.Redirect("Employer_Login.aspx");
         }
 
         protected void Participant_Click(object sender, EventArgs e)
