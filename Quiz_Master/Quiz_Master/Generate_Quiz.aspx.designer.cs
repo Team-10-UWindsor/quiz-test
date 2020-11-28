@@ -11,70 +11,88 @@ namespace Quiz_Master
 {
 
 
-    public partial class signup
+    public partial class QuizCreate
     {
 
         /// <summary>
-        /// confirmpswd control.
+        /// next control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmpswd;
+        protected global::System.Web.UI.WebControls.Button next;
 
         /// <summary>
-        /// password control.
+        /// prev control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.Button prev;
 
         /// <summary>
-        /// emailId control.
+        /// done control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailId;
+        protected global::System.Web.UI.WebControls.Button done;
 
         /// <summary>
-        /// username control.
+        /// new_ques control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox username;
+        protected global::System.Web.UI.WebControls.Button new_ques;
 
         /// <summary>
-        /// phone control.
+        /// question control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phone;
+        protected global::System.Web.UI.WebControls.TextBox question;
 
         /// <summary>
-        /// sign_up control.
+        /// enteroption2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sign_up;
+        protected global::System.Web.UI.WebControls.TextBox enteroption2;
 
         /// <summary>
-        /// checkbox control.
+        /// enteroption1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox checkbox;
+        protected global::System.Web.UI.WebControls.TextBox enteroption1;
+
+        /// <summary>
+        /// enteroption3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox enteroption3;
+
+        /// <summary>
+        /// enteroption4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox enteroption4;
     }
 }

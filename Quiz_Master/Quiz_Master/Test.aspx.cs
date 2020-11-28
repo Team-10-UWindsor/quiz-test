@@ -17,8 +17,7 @@ namespace Quiz_Master
         System.Text.StringBuilder t1 = new StringBuilder();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
+           
                 if (!Page.IsPostBack)
                 {   
                     SqlConnection con = new SqlConnection(strcon);
@@ -84,7 +83,7 @@ namespace Quiz_Master
 
 
                 }
-            }
         }
+        
     }
 }
