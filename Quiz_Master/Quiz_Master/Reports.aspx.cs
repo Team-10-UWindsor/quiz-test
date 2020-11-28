@@ -13,31 +13,29 @@ namespace Quiz_Master
 {
     public partial class Reports : System.Web.UI.Page
     {
+
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-        SqlCommand cmd;
-        SqlDataAdapter da;
-        DataSet ds;
-        SqlConnection con = new SqlConnection("strcon");
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (!IsPostBack)
             {
-                RepeterData();
+                SqlConnection con = new SqlConnection(strcon);
+                SqlDataAdapter sda = new SqlDataAdapter("Select Participant.Participant_Name, [dbo].[Evaluation].Percentage from Evaluation Inner Join Participant On [dbo].[Participant].Participant_Id =[dbo].[Evaluation].Participant_Id",con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                Repeater1.DataSource = dt;
+                Repeater1.DataBind();
+
+
             }
 
         }
 
-        public void RepeterData()
-        {
-            con.Open();
-            cmd = new SqlCommand("Select * from Comment Order By Post_Date desc", con);
-            DataSet ds = new DataSet();
-            da = new SqlDataAdapter(cmd);
-            da.Fill(ds);
-            RepterDetails.DataSource = ds;
-            RepterDetails.DataBind();
-        }
 
+        protected void done_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dashboard.aspx");
+        }
     }
 }

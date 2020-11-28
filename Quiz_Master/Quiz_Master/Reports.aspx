@@ -27,8 +27,8 @@
               <div class="v4505_679">
                   <div class="v4505_680">
                       <div class="v4505_681"></div>
-                      
-                      <asp:Button ID="done" runat="server" class="v4505_682" Text="Done" />
+                      <asp:Button ID="done" runat="server" class="v4505_682" Text="Done" OnClick="done_Click" />
+                                        
                    </div></div>
               <span class="v4505_689">Empoyee details</span>
               <div class="name"></div>
@@ -47,31 +47,32 @@
                   <span class="v4505_715">Score 4</span>
                   <span class="v4505_719">Score 5</span>
                   -->
-                  <div class="v4505_698"></div>
-                  <div class="v4505_697"></div>         
-                  <asp:Repeater ID="RepterDetails" runat="server">
-                      <HeaderTemplate>  
-                        <table style="border:1px solid #0000FF; width:500px" cellpadding="0">  
-                     <tr style="background-color:#FF6600; color:#000000; font-size: large; font-weight: bold;">  
-                         <td colspan="2">  
-                           <tr>
+                  
+
+                  <div class="v4505_698">
+                                        <table>
+                      <tr>
                           <th class="v4505_700">Participant Name</th>
                           <th class="v4505_701">Score</th>
-                           </tr>
-                        </td>  
-                        </tr>  
-                     </HeaderTemplate>  
-                      <ItemTemplate>
-                  <table>
-                      <tr>
-                          <asp:Label ID="lblSubject" runat="server" Text='<%#Eval("Participant_Name") %>' Font-Bold="true"/> 
-                          <asp:Label ID="Label1" runat="server" Text='<%#Eval("Participant_Name") %>' Font-Bold="true"/> 
                       </tr>
-                      <tr>                 
+                                            </table>
+                      <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                            <table>
+                      <tr> 
+                            
+                            <td><%#Eval("Participant_Name")%></td> 
+                            <td><%#Eval("Percentage")%></td> 
                       </tr>
                   </table>
-                          </ItemTemplate>
-                      </asp:Repeater>
+                    </ItemTemplate>
+                                            </asp:Repeater> 
+                  </div>
+
+ 
+                  <div class="v4505_697"></div>         
+                 
+
                   </div>
               <div class="v4505_722"></div>
           </div>
