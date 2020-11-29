@@ -11,7 +11,7 @@ namespace Quiz_Master
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // report.Checked = false;
+            report.Checked = false;
                 // quiz.ClearSelection();
                emp_name.Text = Session["activeUser"].ToString();
                emp_id.Text = Session["activeUserId"].ToString();
@@ -21,14 +21,14 @@ namespace Quiz_Master
         protected void next_Click(object sender, EventArgs e)
         {
 
-            if (report.Checked && quiz.Checked)
-                uncheck();
-
-            else if (report.Checked)
+            if (report.Checked)
+            {
                 Response.Redirect("Reports.aspx");
-
+            }
             else if (quiz.Checked)
+            {
                 Response.Redirect("ViewQuiz.aspx");
+            }
 
         }
         void uncheck()

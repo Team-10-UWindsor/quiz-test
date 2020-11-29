@@ -257,8 +257,6 @@
     top: 791px;
     left: 931px;
     overflow: hidden;
-    color: transparent;
-    text-shadow: 0 0 5px black;
 }
 
 .v0_123 {
@@ -273,15 +271,12 @@
     top: 0px;
     left: 0px;
     overflow: hidden;
-    color: transparent;
-    text-shadow: 0 0 5px black;
 }
 
 .v0_124 {
     width: 75px;
     height: 24px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    background: rgba(32,74,99,1);
     opacity: 1;
     position: absolute;
     top: 0px;
@@ -295,8 +290,7 @@
 
 .v0_125 {
     width: 34px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(255,255,255,1);
     position: absolute;
     top: 4px;
     left: 21px;
@@ -319,8 +313,6 @@
     top: 0px;
     left: 91px;
     overflow: hidden;
-    color: transparent;
-    text-shadow: 0 0 5px black;
 }
 
 .v0_127 {
@@ -336,14 +328,11 @@
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     overflow: hidden;
-    color: transparent;
-    text-shadow: 0 0 5px black;
 }
 
 .v0_128 {
     width: 29px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(255,255,255,1);
     position: absolute;
     top: 4px;
     left: 21px;
@@ -352,7 +341,6 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
-
 }
 
 .v0_129 {
@@ -370,8 +358,7 @@
 
 .v0_130 {
     width: 123px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(51,51,51,1);
     position: absolute;
     top: 422px;
     left: 143px;
@@ -384,47 +371,46 @@
 
 .v0_131 {
     width: 78px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(97,96,96,1);
     position: absolute;
     top: 461px;
     left: 143px;
     font-family: Arial;
     font-weight: Bold;
     font-size: 14px;
+    opacity: 1;
     text-align: left;
 }
 
 .v0_132 {
     width: 609px;
+    color: rgba(51,51,51,1);
     position: absolute;
     top: 487px;
     left: 143px;
     font-family: Arial;
     font-weight: normal;
     font-size: 14px;
+    opacity: 1;
     text-align: left;
-    color: transparent;
-    text-shadow: 0 0 5px black;
 }
 
 .v0_133 {
     width: 365px;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 470px;
     left: 953px;
     font-family: Arial;
     font-weight: normal;
     font-size: 14px;
+    opacity: 1;
     text-align: left;
-    color: transparent;
-    text-shadow: 0 0 5px black;
 }
 
 .v0_134 {
     width: 365px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 521px;
     left: 953px;
@@ -437,8 +423,7 @@
 
 .v0_135 {
     width: 365px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 588px;
     left: 953px;
@@ -451,8 +436,7 @@
 
 .v0_136 {
     width: 365px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 639px;
     left: 953px;
@@ -465,8 +449,7 @@
 
 .v0_137 {
     width: 365px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 692px;
     left: 953px;
@@ -479,8 +462,7 @@
 
 .v0_138 {
     width: 76px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(97,96,96,1);
     position: absolute;
     top: 511px;
     left: 166px;
@@ -493,8 +475,7 @@
 
 .v0_139 {
     width: 57px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(97,96,96,1);
     position: absolute;
     top: 537px;
     left: 166px;
@@ -507,8 +488,7 @@
 
 .v0_140 {
     width: 84px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(97,96,96,1);
     position: absolute;
     top: 563px;
     left: 166px;
@@ -522,8 +502,7 @@
 .v0_141 {
     width: 174px;
     height: 30px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    background: rgba(240,240,240,1);
     opacity: 1;
     position: absolute;
     top: 419px;
@@ -533,8 +512,7 @@
 
 .v0_142 {
     width: 40px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(51,51,51,1);
     position: absolute;
     top: 422px;
     left: 931px;
@@ -547,8 +525,7 @@
 
 .v0_143 {
     width: 154px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(51,51,51,1);
     position: absolute;
     top: 425px;
     left: 993px;
@@ -581,8 +558,7 @@
 
 .v0_149 {
     width: 84px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(97,96,96,1);
     position: absolute;
     top: 589px;
     left: 166px;
@@ -595,8 +571,7 @@
 
 .v0_150 {
     width: 88px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(97,96,96,1);
     position: absolute;
     top: 615px;
     left: 166px;
@@ -617,8 +592,7 @@
 
 .v0_153 {
     width: 12px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 470px;
     left: 931px;
@@ -631,8 +605,7 @@
 
 .v0_154 {
     width: 12px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 521px;
     left: 931px;
@@ -645,8 +618,7 @@
 
 .v0_155 {
     width: 12px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 588px;
     left: 931px;
@@ -659,8 +631,7 @@
 
 .v0_156 {
     width: 12px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 639px;
     left: 931px;
@@ -673,8 +644,7 @@
 
 .v0_157 {
     width: 12px;
-    color: transparent;
-    text-shadow: 0 0 5px black;
+    color: rgba(0,77,191,1);
     position: absolute;
     top: 692px;
     left: 931px;
@@ -688,10 +658,10 @@
 .v0_158 {
     width: 100%;
     height: 466px;
+    background: rgba(255,255,255,0.36000001430511475);
+    opacity: 1;
     position: absolute;
     top: 372px;
     left: 129px;
     overflow: hidden;
-    color: transparent;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }

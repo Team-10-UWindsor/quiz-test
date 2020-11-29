@@ -9,12 +9,26 @@
     <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
     <link href="dashboard.css" rel="stylesheet" />
     <title>Dashboard</title>
-    
-</head>
+
+    <script language="C#" runat="server">
+
+        void next_Click(Object Sender, EventArgs e) {
+
+            if (report.Checked) {
+                Response.Redirect("Reports.aspx");
+            }
+            else if (quiz.Checked) {
+                Response.Redirect("ViewQuiz.aspx");
+            }
+          
+        }
+
+    </script>
+
+        </head>
 <body>
-    <div class="v4505_231" >
     <form runat="server">
-            
+            <div class="v4505_231">
         <div class="v4505_232">
             <div class="v4505_233"></div>
             <div class="v4505_234"></div>
@@ -25,10 +39,8 @@
         </div>
         <span class="v4505_249">Employee Name</span>
         <span class="v4505_250">Employee ID</span>
-        
-                <asp:Label ID="emp_name" class="v4505_251" runat="server" Text="Employee_Name"></asp:Label>
-            <asp:Label ID="emp_id" class="v4505_252" runat="server" Text="Employee_ID"></asp:Label>
-        
+         <label class="v4505_251" for="emp_name" id="emp_name">Iron Man</label>
+        <label class="v4505_252" for="emp_id" id="emp_id">EMP012345</label>
         <div class="v4505_253">
             <div class="v4505_257">
                 <div class="v4505_258"></div>
@@ -53,9 +65,22 @@
             <asp:RadioButton ID="quiz" GroupName="dashboard" runat="server" />
             </div>
             <label class="v4505_386" for="generate_quiz">Generate Quiz</label><br>
+            <div class="v4505_729">
+            <asp:RadioButton ID="create_new_quiz" class="" runat="server" name="createquiz" value="create_new_quiz"/>
+            </div>   
+ 
+            <label class="v4505_401" for="create_new_quiz">Create New Quiz</label><br>
+        <div class="v4505_730">
+            <asp:RadioButton ID="fetch_previous_quiz" class="" runat="server" name="createquiz" value="fetch_previous_quiz"/>
+            
+         </div>
+         <label class="v4505_402" for="fetch_previous_quiz">Fetch Previous Quiz</label><br>
         <div class="name"></div>
         <div class="name"></div>        
-        <div class="v4505_726"></div>        
+        <div class="v4505_726"></div>
+
+
+        
         <!--
             <span class="v4505_386">Generate Quiz</span>
  <span class="v4505_401">Create New Quiz</span>
@@ -63,8 +88,8 @@
  <div class="name"></div><div class="v4505_387"><div class="v4505_388"></div></div>
  <div class="v4505_726"></div><div class="v4505_727"></div></div>
             -->
-   
+    </div>
     </form>
-     </div>
+
 </body>
 </html>

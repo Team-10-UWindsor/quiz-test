@@ -44,9 +44,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -103,6 +100,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -116,8 +118,8 @@
     <Content Include="EmployerLogin.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Generate_Quiz.aspx" />
     <Content Include="generate_quiz.css" />
+    <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -129,6 +131,7 @@
     <Content Include="index.aspx" />
     <Content Include="Participant_Login.aspx" />
     <Content Include="Participant_Login_Stylesheet.css" />
+    <Content Include="Generate_Quiz.aspx" />
     <Content Include="QuizMain.css" />
     <Content Include="Quiz_Main.aspx" />
     <Content Include="Reports.aspx" />
@@ -221,12 +224,8 @@
       <DependentUpon>EmployerLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Evaluate.cs" />
-    <Compile Include="Generate_Quiz.aspx.cs">
-      <DependentUpon>Generate_Quiz.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Generate_Quiz.aspx.designer.cs">
-      <DependentUpon>Generate_Quiz.aspx</DependentUpon>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -261,9 +260,6 @@
     <Compile Include="Reports.aspx.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reports.aspx.designer.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sign_Up.aspx.cs">
       <DependentUpon>Sign_Up.aspx</DependentUpon>
@@ -347,7 +343,8 @@
           <IISUrl>https://localhost:44371/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>https://quizmaster20201128022209.azurewebsites.net/</CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

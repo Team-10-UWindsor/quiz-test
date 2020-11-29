@@ -290,8 +290,6 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
-    line-height: 2.2;
-    
 }
 
 .v4505_600 {
@@ -415,7 +413,6 @@
     text-align: left;
 }
 
-
 .v4505_724 {
     width: 500px;
     height: 500px;
@@ -428,18 +425,4 @@
     top: 300px;
     left: 910px;
     overflow: hidden;
-}
-
-
-.v4505_789 {
-    width: 64px;
-    color: rgba(51,51,51,1);
-    position: absolute;
-    top: 291px;
-    left: 143px;
-    font-family: Arial;
-    font-weight: normal;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
 }

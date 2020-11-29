@@ -4,42 +4,73 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace Quiz_Master
 {
-    public partial class Generate_Quiz : System.Web.UI.Page
+    public partial class QuizCreate : System.Web.UI.Page
     {
-        string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        Dictionary<String, String> que=null;
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+            if (Page.IsPostBack)
             {
-                SqlConnection con = new SqlConnection(strcon);
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-                SqlCommand cmd = new SqlCommand("Insert into Question (Employer_Name, Employer_Password,Phone,Email) values (@EmployerName,@EmployerPassword,@Phone,@Email)", con);
 
-                //cmd.Parameters.AddWithValue("@EmoloyerId", "1");
-                cmd.Parameters.AddWithValue("@EmployerName", username.Text.Trim());
-                cmd.Parameters.AddWithValue("@EmployerPassword", password.Text.Trim());
-                cmd.Parameters.AddWithValue("@Phone", phone.Text.Trim());
-                cmd.Parameters.AddWithValue("@Email", emailId.Text.Trim());
-
-
-                cmd.ExecuteNonQuery();
-                Response.Write("<script>alert('Sign Up Successfull !!!! ');</script>");
-                con.Close();
-                Response.Redirect("Employer_Login.aspx");
             }
-            catch (Exception ex)
+        }
+
+        protected void done_Click(object sender, EventArgs e)
+        {
+               
+            
+
+        }
+
+        protected void next_Click(object sender, EventArgs e)
+        {
+            List<Dictionary<String, String>> quiz = new List<Dictionary<String, String>>();
+
+
+            var question = "";
+            var Option1 = "";
+            var Option2 = "";
+            var Option3 = "";
+            var Option4 = "";
+            var Solution = "";
+
+            question = Request.QueryString["question"];
+            Option1 = Request.QueryString["enteroption1"];
+            Option2 = Request.QueryString["enteroption2"];
+            Option3 = Request.QueryString["enteroption3"];
+            Option4 = Request.QueryString["enteroption4"];
+            Solution = Request.QueryString["entersolution"];
+
+            var items = from pair in que
+                       select pair;
+
+            que.Add("question", question);
+            que.Add("Option1", Option1);
+            que.Add("Option2", Option2);
+            que.Add("Option3", Option3);
+            que.Add("Option4", Option4);
+            que.Add("Solution", Solution);
+
+            Response.Write("<script>alert('" + question + "')</script>");
+
+            quiz.Add(que);
+
+
+
+
+
+
+            foreach (KeyValuePair<string, string> pair in que)
             {
-                Response.Write("<script>alert('" + ex.Message + " ');</script>");
+                //Console.log(pair.Key);
+                Response.Write("<script>alert('" + pair.Value + "')</script>");
             }
+
+            Response.Write("<script>alert('" + question + "')</script>");
+
         }
     }
 }
