@@ -35,6 +35,7 @@ namespace Quiz_Master
                 {
                     while (dr.Read())
                     {
+                        Session["QID"] = dr.GetInt32(0);
                         Response.Redirect("Quiz_Landing_Page.aspx");
                     }
 
@@ -42,6 +43,11 @@ namespace Quiz_Master
                 else
                 {
                     Response.Write("<script>alert('Invalid Quiz ID')</script>");
+                }
+                dr.Close();
+                if (con.State == ConnectionState.Open)
+                {
+                    con.Close();
                 }
 
             }

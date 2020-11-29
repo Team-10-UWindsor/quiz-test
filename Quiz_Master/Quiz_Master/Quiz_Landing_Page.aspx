@@ -28,7 +28,7 @@
         <div class="v0_115">
             <div class="v0_116"></div>
             <div class="name"></div>
-            <asp:TextBox ID="Participant_Email" class="v0_118" name="Participant_Email" placeholder="Enter Participant Email" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Participant_Email" class="v0_118" name="Participant_Email" placeholder="Enter Participant Email" runat="server" TextMode="Email"></asp:TextBox>
         </div>
         <div class="v0_119">
             <div class="v0_120"></div>
