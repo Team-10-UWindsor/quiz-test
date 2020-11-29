@@ -21,6 +21,9 @@ namespace Quiz_Master
         // Sign In button is clicked
         protected void signin_Click(object sender, EventArgs e)
         {
+            string Employer_Name = string.Empty;
+            int Employer_Id;
+
             try
             {
                 SqlConnection con = new SqlConnection(strcon);
@@ -32,13 +35,17 @@ namespace Quiz_Master
                 SqlCommand cmd = new SqlCommand("Select * from Employer where Employer_Name ='"+user_name.Text.Trim()+"' AND Employer_Password='"+password.Text.Trim()+"'", con);
 
                 SqlDataReader dr = cmd.ExecuteReader();
-                if(dr.HasRows)
+                Server.Transfer("Dashboard.aspx");
+                if (dr.HasRows)
                 {
                     while(dr.Read())
                     {
-                        Response.Write("<script>alert('" + dr.GetValue(1).ToString() + "');</script>");
+                       // Response.Write("<script>alert('" + dr.GetValue(1).ToString() + "');</script>");
                     }
 
+                    Response.Redirect("Dashboard.aspx");
+                    Employer_Name = dr[1].ToString();
+                    Session["activeUser"] = Employer_Name;
                 }
                 else
                 {
@@ -52,9 +59,5 @@ namespace Quiz_Master
             }
         }
 
-        protected void user_name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

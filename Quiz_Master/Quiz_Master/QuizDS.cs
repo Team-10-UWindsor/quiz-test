@@ -110,5 +110,14 @@ namespace Quiz_Master
 
             return quiz;
         }
+
+        public List<Dictionary<String, String>> createQuiz(int quiz_id)
+        {
+
+            var que = "";
+
+             
+        }
+
     }
 }

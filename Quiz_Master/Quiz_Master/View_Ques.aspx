@@ -36,14 +36,14 @@
             <ul>
               
             </u>
-            -->
+
         <span class="v4505_598">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_600">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_602">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_599">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_601">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_603">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
-        
+                    -->
         <span class="v4505_590">Empoyee details</span>
 
         <div class="name"></div>
@@ -52,6 +52,25 @@
         <span class="v4505_604">Questions</span>
         <div class="v4505_724">
             </div></div>
+
+        
+ <div class="v4505_598">
+         <table>
+          <asp:Repeater ID="Repeater_3" runat="server">
+                          <ItemTemplate>
+                              <table>
+                                  <tr>
+                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='#'><%#Eval("Question_Description")%></asp:HyperLink></td>
+                                      
+                                      
+                                      
+                                  </tr>
+                               </table>
+                            </ItemTemplate>
+        </asp:Repeater>  
+     </table>
+ </div>
+
         </form>
 </body>
 </html>

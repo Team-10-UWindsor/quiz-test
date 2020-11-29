@@ -1,6 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Generate_Quiz.aspx.cs" Inherits="Quiz_Master.QuizCreate" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+
+</script>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,7 +15,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" method="get">
 
 
 <div class="v4505_424">
@@ -29,7 +34,7 @@
 
     <div class="v4505_446"><div class="v4505_447">
         <div class="v4505_448"></div>
-        <asp:Button ID="next" runat="server" class="v4505_449" Text="Next" />
+        <asp:Button ID="next" runat="server" class="v4505_449" Text="Next" OnClick="next_Click" />
         
         </div></div>
     <div class="v4505_497">
@@ -55,19 +60,24 @@
         <div class="name"></div>
         <asp:TextBox ID="question" class="v4505_508" runat="server" placeholder="Enter Question" name="enterquestion"></asp:TextBox>
         
-    </div>
+        
+        </div>
     <div class="v4505_514">
         <div class="v4505_515"></div>
         <div class="name"></div>
-        <asp:TextBox ID="enteroption2" class="v4505_517" runat="server" placeholder="Enter Option 2" name="enteroption2"></asp:TextBox>
+        <asp:TextBox ID="enteroption1" class="v4505_517" runat="server" placeholder="Enter Option 1" name="enteroption1"></asp:TextBox>
         
         </div>
+    
     <div class="v4505_510">
         <div class="v4505_511"></div>
         <div class="name"></div>
-        <asp:TextBox ID="enteroption1"  class="v4505_513" runat="server" placeholder="Enter Option 1" name="enteroption1"></asp:TextBox>
+        <asp:TextBox ID="enteroption2"  class="v4505_513" runat="server" placeholder="Enter Option 2" name="enteroption2"></asp:TextBox>
         
     </div>
+
+
+
     <div class="v4505_518">
         <div class="v4505_519"></div>
         <div class="name"></div>
@@ -80,12 +90,23 @@
         <asp:TextBox ID="enteroption4" class="v4505_525" runat="server" placeholder="Enter Option 4" name="enteroption4"></asp:TextBox>
         
     </div>
+
+    </div>
+    <div class="v4505_522">
+        <div class="v4505_523"></div>
+        <div class="name"></div>
+        <asp:TextBox ID="entersolution" class="v4505_525" runat="server" placeholder="Enter Solution" name="entersolution"></asp:TextBox>
+        
+    </div>
+
+
+
     <span class="v4505_450">Empoyee details</span>
     <div class="name"></div>
     <span class="v4505_483">Quiz ID:</span>
     <span class="v4505_486">02345</span>
     <div class="v4505_725"></div>
-</div>
+
             </form>
 </body>
 </html>
