@@ -51,7 +51,7 @@
             </div>
             <div class="v4539_35">
                 <div class="v4539_36">  
-                    <asp:CheckBox ID="checkbox" runat="server" />
+                    <asp:CheckBox ID="checkbox" runat="server" OnCheckedChanged="checkbox_CheckedChanged" />
                 </div>
                 <span class="v4539_38">By joining  I agree with  Terms & Conditions and Privacy policy</span>
             </div></div>

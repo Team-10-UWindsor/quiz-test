@@ -118,6 +118,7 @@
     <Content Include="EmployerLogin.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Generate_Quiz.aspx" />
     <Content Include="generate_quiz.css" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -131,7 +132,6 @@
     <Content Include="index.aspx" />
     <Content Include="Participant_Login.aspx" />
     <Content Include="Participant_Login_Stylesheet.css" />
-    <Content Include="Generate_Quiz.aspx" />
     <Content Include="QuizMain.css" />
     <Content Include="Quiz_Main.aspx" />
     <Content Include="Reports.aspx" />
@@ -224,6 +224,13 @@
       <DependentUpon>EmployerLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Evaluate.cs" />
+    <Compile Include="Generate_Quiz.aspx.cs">
+      <DependentUpon>Generate_Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Generate_Quiz.aspx.designer.cs">
+      <DependentUpon>Generate_Quiz.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,6 +267,9 @@
     <Compile Include="Reports.aspx.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sign_Up.aspx.cs">
       <DependentUpon>Sign_Up.aspx</DependentUpon>

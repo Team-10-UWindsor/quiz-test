@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Employer_Login.aspx.cs" Inherits="Quiz_Master.Employer_Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="EmployerLogin.aspx.cs" Inherits="Quiz_Master.EmployerLogin" %>
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@
               <div class="v0_46">
                   <div class="v0_47"></div>
                   <div class="name"></div>
-                  <asp:TextBox ID="user_name"  class="v0_49" placeholder="User name" name="user_name" runat="server" OnTextChanged="user_name_TextChanged"></asp:TextBox>
+                  <asp:TextBox ID="user_name"  class="v0_49" placeholder="User name" name="user_name" runat="server" ></asp:TextBox>
                
               </div>
               <div class="v0_50">
@@ -36,7 +36,7 @@
               <asp:Button ID="signin" runat="server" class="v0_55" Text="Sign in" OnClick="signin_Click" />
               <div class="v0_56">
                   <div class="v0_57"></div>
-                  <asp:Button ID="signup" class="v0_58" runat="server" Text="Sign up" />
+                  <asp:Button ID="signup" class="v0_58" runat="server" Text="Sign up" OnClick="signup_Click" />
               </div>
               <div class="v0_59">
                   <span class="v0_60">or</span>
@@ -47,7 +47,7 @@
                
               <div class="v0_64">
                   <div class="v0_65">
-                      <asp:CheckBox ID="checkbox" runat="server" />
+                      <asp:CheckBox ID="checkbox" runat="server" OnCheckedChanged="checkbox_CheckedChanged" />
                   </div>
                   <span class="v0_67">By joining  I agree with  Terms & Conditions and Privacy policy</span>
               </div></div>
