@@ -23,7 +23,7 @@
             <div class="v0_175"></div>
         </div>
 
-        <span class="v0_188">Empoyee details:</span>
+        <span class="v0_188">Employee details:</span>
         <span class="v0_177">Employee Name</span>
         <span class="v0_178">Employee ID</span>
         <span class="v0_179">Iron Man</span>
