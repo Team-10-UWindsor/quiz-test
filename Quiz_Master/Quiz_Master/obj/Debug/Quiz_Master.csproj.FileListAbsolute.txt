@@ -294,3 +294,7 @@ C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\bin\Antlr3.Runtim
 C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CopyComplete
+C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csprojAssemblyReference.cache
+C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CoreCompileInputs.cache
+C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.dll
+C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.pdb

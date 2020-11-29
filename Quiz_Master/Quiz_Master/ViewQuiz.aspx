@@ -21,8 +21,11 @@
             </div>
         <span class="v4505_626">Employee Name</span>
         <span class="v4505_627">Employee ID</span>
-        <label class="v4505_628" for="emp_name" id="emp_name">Iron Man</label>
-        <label class="v4505_629" for="emp_id" id="emp_id">EMP012345</label>
+
+     
+          <asp:Label ID="emp_name" class="v4505_628" runat="server" Text="Employee_Name"></asp:Label>
+            <asp:Label ID="emp_id" class="v4505_629" runat="server" Text="Employee_ID"></asp:Label>
+
         <div class="v4505_630">
             <div class="v4505_631">
                 <div class="v4505_632"></div>
@@ -56,7 +59,7 @@
                           <ItemTemplate>
                               <table>
                                   <tr>
-                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id='><%#Eval("Quiz_Name")%></asp:HyperLink></td>
+                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id=' ><%#Eval("Quiz_Name")%></asp:HyperLink></td>
                                       
                                       
                                       

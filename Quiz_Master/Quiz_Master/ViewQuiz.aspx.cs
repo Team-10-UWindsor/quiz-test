@@ -16,11 +16,14 @@ namespace Quiz_Master
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            emp_name.Text = Session["activeUser"].ToString();
+            emp_id.Text = Session["activeUserId"].ToString();
+
             if (!IsPostBack)
             {
-                Session["Name"] = "Anish";
+                
                 SqlConnection con = new SqlConnection(strcon);
-                SqlDataAdapter sda = new SqlDataAdapter("Select * from Quiz", con);
+                SqlDataAdapter sda = new SqlDataAdapter("Select * from Quiz where Employer_Id="+ Session["activeUserId"].ToString(), con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 

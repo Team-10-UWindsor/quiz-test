@@ -35,7 +35,7 @@ namespace Quiz_Master
                 SqlCommand cmd = new SqlCommand("Select * from Employer where Employer_Name ='"+user_name.Text.Trim()+"' AND Employer_Password='"+password.Text.Trim()+"'", con);
 
                 SqlDataReader dr = cmd.ExecuteReader();
-                Server.Transfer("Dashboard.aspx");
+                Response.Redirect("Dashboard.aspx");
                 if (dr.HasRows)
                 {
                     while(dr.Read())
@@ -49,13 +49,13 @@ namespace Quiz_Master
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invalid Credentials')</script>");
+                   // Response.Write("<script>alert('Invalid Credentials')</script>");
                 }
 
             }
             catch(Exception ex)
             {
-                Response.Write("<script>alert('" + ex.Message + " ');</script>");
+                //Response.Write("<script>alert('" + ex.Message + " ');</script>");
             }
         }
 

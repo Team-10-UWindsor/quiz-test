@@ -16,6 +16,9 @@ namespace Quiz_Master
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            emp_name.Text = Session["activeUser"].ToString();
+            emp_id.Text = Session["activeUserId"].ToString();
+
             if (!IsPostBack)
             {
                 
