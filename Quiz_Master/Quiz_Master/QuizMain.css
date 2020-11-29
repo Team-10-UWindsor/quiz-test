@@ -66,11 +66,9 @@
 }
 
 .v0_174 {
-    width: 100%;
-    height: 676px;
-    background: url("../images/v0_174.png");
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: 102%;
+    height: 677px;
+    background: url('../images/v0_174.png') no-repeat center;
     background-size: cover;
     opacity: 1;
     position: absolute;
@@ -320,7 +318,7 @@
     color: rgba(0,77,191,1);
     position: absolute;
     top: 470px;
-    left: 953px;
+    left: 922px;
     font-family: Arial;
     font-weight: normal;
     font-size: 14px;
@@ -535,6 +533,7 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
+    right: 97px;
 }
 
 .v0_213 {
@@ -633,4 +632,14 @@
     opacity: 1;
     text-align: center;
     outline: none;
+}
+.lb_quelist {
+    border-style: none;
+    border-width: 0px;
+    border-color: white;
+    border: none;
+    text-wrap: initial;
+    margin-bottom: 4px;
+    font-size: 12pt;
+    font-family: Verdana;
 }

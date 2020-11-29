@@ -223,6 +223,7 @@
     <Compile Include="Employer_Login.aspx.designer.cs">
       <DependentUpon>Employer_Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Evaluate.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
