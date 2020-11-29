@@ -60,6 +60,9 @@
                               <table>
                                   <tr>
                                        <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id=' ><%#Eval("Quiz_Name")%></asp:HyperLink></td>
+                                      
+                                      
+                                      
                                   </tr>
                                </table>
                             </ItemTemplate>

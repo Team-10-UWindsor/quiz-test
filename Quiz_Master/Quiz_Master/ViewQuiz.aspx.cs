@@ -34,7 +34,16 @@ namespace Quiz_Master
                 Repeater_2.DataBind();
 
 
+
             }
+        }
+
+    
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            //Session["Active_QuizID"] = LinkButton.Text;
+            //Response.Write("<script>alert('"+Session["Active_QuizID"].ToString()+"')</script>");
         }
     }
 }
