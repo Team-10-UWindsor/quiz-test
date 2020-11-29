@@ -516,3 +516,7 @@ C:\Users\btalla\Source\Repos\quiz-test2\Quiz_Master\Quiz_Master\bin\Antlr3.Runti
 C:\Users\btalla\Source\Repos\quiz-test2\Quiz_Master\Quiz_Master\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\btalla\Source\Repos\quiz-test2\Quiz_Master\Quiz_Master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\btalla\Source\Repos\quiz-test2\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CopyComplete
+C:\Users\anish\source\repos\Project103\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csprojAssemblyReference.cache
+C:\Users\anish\source\repos\Project103\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CoreCompileInputs.cache
+C:\Users\anish\source\repos\Project103\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.dll
+C:\Users\anish\source\repos\Project103\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.pdb
