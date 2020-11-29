@@ -9,31 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
     <link href="dashboard.css" rel="stylesheet" />
     <title>Dashboard</title>
-    <script language="C#" runat="server">
-
-      void next_Click(Object Sender, EventArgs e)
-        {
-                               
-            if (report.Checked)
-            {                
-                  
-                Response.Redirect("Reports.aspx");
-            }
-            else if (quiz.Checked)
-            {
-                Response.Redirect("ViewQuiz.aspx");
-            }
-
-            
-        }
-        void uncheck()
-        {
-            report.Checked = false;
-            quiz.Checked = false;
-        }
-    </script>
-
-        </head>
+    
+</head>
 <body>
     <div class="v4505_231" >
     <form runat="server">
@@ -68,12 +45,12 @@
             -->
         <div class="v4505_384">
             <div class="v4505_379">
-            <asp:RadioButton ID="report" AutoPostBack="true"  GroupName="dashboard" runat="server"  />
+            <asp:RadioButton ID="report" GroupName="dashboard" runat="server"  />
             </div>
             <label class="v4505_269" for="view_report">View Report</label><br>       
             </div>
             <div class="v4505_387">
-            <asp:RadioButton ID="quiz" AutoPostBack="true" GroupName="dashboard" runat="server" />
+            <asp:RadioButton ID="quiz" GroupName="dashboard" runat="server" />
             </div>
             <label class="v4505_386" for="generate_quiz">Generate Quiz</label><br>
         <div class="name"></div>
