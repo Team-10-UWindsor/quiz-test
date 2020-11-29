@@ -13,43 +13,48 @@ namespace Quiz_Master
     public partial class Quiz_Landing_Page : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if(Request.QueryString["q_id"] != null && Request.QueryString["q_id"] != string.Empty)
+                {
+                    Session["Quiz_Id"] = Request.QueryString["q_id"].ToString();
+                }
+            }
         }
 
         protected void submit_Click(object sender, EventArgs e)
         {
+            SqlConnection con = null;
+            
             try
             {
-                SqlConnection con = new SqlConnection(strcon);
+                con = new SqlConnection(strcon);
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("Select * from Participant where Participant_Name ='" + Participant_name.Text.Trim() + "' AND Participant_Email='" + Participant_Email.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("Insert into Participant (Participant_Name, Participant_Email) values (@ParticipantName,@ParticipantEmail)", con);
 
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.HasRows)
+                cmd.Parameters.AddWithValue("@ParticipantName", Participant_name.Text.Trim());
+                cmd.Parameters.AddWithValue("@ParticipantEmail", Participant_Email.Text.Trim());
+                cmd.ExecuteNonQuery();
+
+                Session["P_EMAIL"] = Participant_Email.Text.Trim();
+
+                if (con.State == ConnectionState.Open)
                 {
-                    while (dr.Read())
-                    {
-                        Response.Write("<script>alert('" + dr.GetValue(1).ToString() + "');</script>");
-                    }
-
+                    con.Close();
                 }
-                else
-                {
-                    Response.Write("<script>alert('Invalid Credentials')</script>");
-                }
-
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + " ');</script>");
             }
-
+            Response.Write("<script>alert('Good luck for the quiz, " + Participant_name.Text.Trim() + "! ');</script>");
             Response.Redirect("Quiz_Main.aspx");
         }
     }

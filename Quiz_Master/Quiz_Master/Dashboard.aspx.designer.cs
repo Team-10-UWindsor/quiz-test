@@ -49,7 +49,10 @@ namespace Quiz_Master
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton create_new_quiz;
-
+        protected global::System.Web.UI.WebControls.RadioButton report;
+        protected global::System.Web.UI.WebControls.RadioButton quiz;
+        protected global::System.Web.UI.WebControls.Label emp_name;
+        protected global::System.Web.UI.WebControls.Label emp_id;
         /// <summary>
         /// fetch_previous_quiz control.
         /// </summary>
