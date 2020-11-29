@@ -24,8 +24,11 @@
               </div>
               <span class="v4505_675">Employee Name</span>
               <span class="v4505_676">Employee ID</span>
-              <label class="v4505_677" for="emp_name" id="emp_name">Iron Man</label>
-              <label class="v4505_678" for="emp_id" id="emp_id">EMP012345</label>             
+
+          <asp:Label ID="emp_name" class="v4505_677" runat="server" Text="Employee_Name"></asp:Label>
+            <asp:Label ID="emp_id" class="v4505_678" runat="server" Text="Employee_ID"></asp:Label>
+           
+
               <div class="v4505_679">
                   <div class="v4505_680">
                       <div class="v4505_681"></div>

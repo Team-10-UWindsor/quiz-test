@@ -224,7 +224,7 @@
 }
 
 .v4505_638 {
-    width: 41px;
+    width: 80px;
     color: rgba(0,77,191,1);
     position: absolute;
     top: 420px;
@@ -331,7 +331,20 @@
     text-align: left;
 }
 
-.v4505_731 {
+.v4505_720 {
+    width: 410px;
+    height: 256px;
+    background: url("../images/v4505_720.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 435px;
+    left: 143px;
+    overflow: hidden;
+}
+    .v4505_731 {
     width: 550px;
     height: 550px;
     background: url("v4505_731.png");
