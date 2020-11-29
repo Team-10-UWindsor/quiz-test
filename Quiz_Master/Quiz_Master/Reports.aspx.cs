@@ -31,6 +31,8 @@ namespace Quiz_Master
                 // Repeater Rpt1 = (Repeater)Master.FindControl("Repeater_1");
                 Repeater_1.DataSource = dt;
                 Repeater_1.DataBind();
+                Repeater_2.DataSource = dt;
+                Repeater_2.DataBind();
 
 
             }

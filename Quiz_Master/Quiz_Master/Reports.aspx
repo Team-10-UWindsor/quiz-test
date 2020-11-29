@@ -54,23 +54,36 @@
                   -->
                   
 
-                  <div class="v4505_698" style="overflow:scroll;height:80px;width:100%;overflow:auto">>  </div>
+                  <div class="v4505_698">  
                       <table>
                       <tr class="v4505_697">
                           <th class="v4505_700">Participant Name</th>
                           <th class="v4505_701">Score</th>
-                      </tr>
-                       </table>
-                      <asp:Repeater ID="Repeater_1" runat="server">
-                          <ItemTemplate>
-                              <table class="v4505_702">
-                                  <tr>
-                                      <td><%#Eval("Participant_Name")%></td>
-                                      <td ><%#Eval("Percentage")%></td>
-                                  </tr>
-                               </table>
-                            </ItemTemplate>
-                     </asp:Repeater>               
+                      </tr> 
+                      </table>
+                      <div class="v4505_702"> 
+                          <table>
+                              <asp:Repeater ID="Repeater_1" runat="server">
+                                  <ItemTemplate>
+                                      <tr>
+                                          <td><%#Eval("Participant_Name")%></td>
+                                      </tr>
+                                  </ItemTemplate>
+                     </asp:Repeater> 
+                           </table>
+                              </div>
+                      <div class="v4505_705"> 
+                          <table>
+                              <asp:Repeater ID="Repeater_2" runat="server">
+                                  <ItemTemplate>
+                                      <tr>
+                                          <td><%#Eval("Percentage")%></td>
+                                      </tr>
+                                  </ItemTemplate>
+                     </asp:Repeater> 
+                           </table>
+                              </div>
+                      </div>
 
                   <!--
                   <div class="v4505_697"></div>         

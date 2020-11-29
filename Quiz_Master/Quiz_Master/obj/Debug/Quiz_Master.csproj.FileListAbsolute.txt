@@ -298,3 +298,5 @@ C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Ma
 C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CoreCompileInputs.cache
 C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.dll
 C:\Users\anish\source\repos\Project101\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.pdb
+C:\Users\btalla\Source\Repos\quiz-test5\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csprojAssemblyReference.cache
+C:\Users\btalla\Source\Repos\quiz-test5\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CoreCompileInputs.cache
