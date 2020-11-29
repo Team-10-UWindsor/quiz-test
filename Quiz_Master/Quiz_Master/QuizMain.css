@@ -320,7 +320,7 @@
     width: 365px;
     color: rgba(0,77,191,1);
     position: absolute;
-    top: 470px;
+    top: 422px;
     left: 922px;
     font-family: Arial;
     font-weight: normal;
@@ -589,6 +589,15 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
+}
+.v0_219 {
+    color: rgba(97,96,96,1);
+    font-family: Arial;
+    font-weight: Bold;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    line-height: 2.5;
 }
 
 .v4535_6 {

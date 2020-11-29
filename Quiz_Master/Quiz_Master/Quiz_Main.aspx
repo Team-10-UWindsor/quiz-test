@@ -126,7 +126,8 @@
 
 
         <span class="v0_192">
-            <asp:ListBox ID="que_list" runat="server" Height="270px" Font-Bold="True" Font-Names="Verdana" Font-Size="Large" Font-Underline="False" ForeColor="#004DBF" AutoPostBack="True" BackColor="White" CssClass="lb_quelist" OnSelectedIndexChanged="que_list_SelectedIndexChanged" Width="365px"></asp:ListBox>
+            <span class="v0_219">All Questions</span>
+            <asp:ListBox ID="que_list" runat="server" style="line-height:2.2" Height="270px" Font-Bold="True" Font-Names="Verdana" Font-Size="Large" Font-Underline="False" ForeColor="#004DBF" AutoPostBack="True" BackColor="White" CssClass="lb_quelist" OnSelectedIndexChanged="que_list_SelectedIndexChanged" Width="365px"></asp:ListBox>
         </span>
         <!--<span class="v0_193">The difference between simple interest and compound on Rs. 1200 for one year at 10% per annum reckoned half-yearly is ?</span>
         <span class="v0_194">At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1348.32 in 2 years?</span>
