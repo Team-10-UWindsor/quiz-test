@@ -11,10 +11,6 @@ namespace Quiz_Master
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack)
-            {
-                quiz.ClearSelection();
-            }
         }
 
         protected void next_Click(object sender, EventArgs e)
