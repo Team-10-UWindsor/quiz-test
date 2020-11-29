@@ -24,8 +24,8 @@
         </div>
         <span class="v4505_547">Employee Name</span>
         <span class="v4505_548">Employee ID</span>
- <asp:Label ID="emp_name" class="v4505_549" runat="server" Text="Employee_Name"></asp:Label>
-            <asp:Label ID="emp_id" class="v4505_550" runat="server" Text="Employee_ID"></asp:Label>
+        <label class="v4505_549" for="emp_name" id="emp_name">Iron Man</label>
+        <label class="v4505_550" for="emp_id" id="emp_id">EMP012345</label>  
         <div class="v4505_555">
             <div class="v4505_556">
                 <div class="v4505_557"></div>
@@ -36,43 +36,22 @@
             <ul>
               
             </u>
-
+            -->
         <span class="v4505_598">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_600">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_602">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_599">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_601">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
         <span class="v4505_603">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
-                    -->
+        
         <span class="v4505_590">Empoyee details</span>
 
         <div class="name"></div>
         <span class="v4505_595">Quiz ID:</span>
-        <asp:Label ID="quiz_id" class="v4505_596" runat="server" Text="Quiz ID"></asp:Label>
-            
-        
+        <label class="v4505_596" for="emp_name" id="quiz_id">02345</label>
         <span class="v4505_604">Questions</span>
         <div class="v4505_724">
             </div></div>
-
-        
- <div class="v4505_598">
-         <table>
-          <asp:Repeater ID="Repeater_3" runat="server">
-                          <ItemTemplate>
-                              <table>
-                                  <tr>
-                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='#'><%#Eval("Question_Description")%></asp:HyperLink></td>
-                                      
-                                      
-                                      
-                                  </tr>
-                               </table>
-                            </ItemTemplate>
-        </asp:Repeater>  
-     </table>
- </div>
-
         </form>
 </body>
 </html>

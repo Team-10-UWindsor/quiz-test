@@ -166,10 +166,7 @@
 
 .v4505_253 {
     width: 75px;
-    height: 24px;
-    background: url("../images/v4505_253.png");
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url('../images/v4505_253.png') no-repeat center;
     background-size: cover;
     opacity: 1;
     position: absolute;
@@ -416,7 +413,6 @@
     top: 456px;
     left: 334px;
     overflow: hidden;
-   
 }
 
 .v4505_730 {

@@ -33,7 +33,7 @@
             <div class="v0_90"></div>
 
             
-            <asp:Button ID="enter" class="v0_91" runat="server" Text="Submit" OnClick="enter_Click" />
+            <asp:Button ID="enter" class="v0_91" runat="server" Text="Button" OnClick="enter_Click" />
             
         </div>
             <span class="v0_92">QUIZ</span>
