@@ -36,20 +36,11 @@
         </div>
         </form>
         
-        <span class="v0_129">Enter empoyee details</span>
+        <span class="v0_129">Enter participant details</span>
         <span class="v0_130">Question 1 of 5</span>
         <span class="v0_131">Question 1:</span>
         <span class="v0_132">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
-        <!--
-        <ul>
-            <li class="v0_133">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</li>
-            <li class="v0_134">The difference between simple interest and compound on Rs. 1200 for one year at 10% per annum reckoned half-yearly is ?</li>
-            <li class="v0_135">At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1348.32 in 2 years?</li>
-            <li class="v0_136">The compound interest on Rs. 30,000 at 7% per annum is Rs. 4347. The period (in years) is ?</li>
-            <li class="v0_137">What is the difference between the compound interests on Rs. 5000 for 1 years at 4% per annum compounded yearly and half-yearly?</li>
-        </ul>
-        -->
-       
+        
                <span class="v0_133">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>
     <span class="v0_134">The difference between simple interest and compound on Rs. 1200 for one year at 10% per annum reckoned half-yearly is ?</span>
     <span class="v0_135">At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1348.32 in 2 years?</span>
@@ -62,7 +53,7 @@
                 <span class="v0_125">Done</span>
             </div>
             <div class="v0_126">
-                <div class="v0_127"></div>
+                
                 <span class="v0_128">Next</span>
             </div>
         </div>

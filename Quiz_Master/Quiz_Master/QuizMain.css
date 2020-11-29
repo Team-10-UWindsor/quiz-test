@@ -108,7 +108,7 @@
 }
 
 .v0_177 {
-    width: 119px;
+    width: px;
     color: rgba(140,140,140,1);
     position: absolute;
     top: 265px;
@@ -121,7 +121,7 @@
 }
 
 .v0_178 {
-    width: 92px;
+    width: px;
     color: rgba(140,140,140,1);
     position: absolute;
     top: 265px;
@@ -134,7 +134,7 @@
 }
 
 .v0_179 {
-    width: 64px;
+    width: 380px;
     color: rgba(51,51,51,1);
     position: absolute;
     top: 291px;
@@ -147,7 +147,7 @@
 }
 
 .v0_180 {
-    width: 89px;
+    width: 380px;
     color: rgba(51,51,51,1);
     position: absolute;
     top: 291px;
@@ -264,7 +264,7 @@
 }
 
 .v0_188 {
-    width: 180px;
+    width: 380px;
     color: rgba(51,51,51,1);
     position: absolute;
     top: 227px;
@@ -280,7 +280,7 @@
     width: 123px;
     color: rgba(51,51,51,1);
     position: absolute;
-    top: 422px;
+    top: 380px;
     left: 143px;
     font-family: Arial;
     font-weight: normal;
@@ -293,14 +293,14 @@
     width: 592px;
     color: rgba(97,96,96,1);
     position: absolute;
-    top: 400px;
+    top: 422px;
     left: 143px;
     font-family: Arial;
     font-weight: Bold;
     font-size: 14px;
     opacity: 1;
     text-align: left;
-    line-height: 2.2;
+    
 }
 
 .v0_191 {
@@ -426,7 +426,7 @@
     background: rgba(240,240,240,1);
     opacity: 1;
     position: absolute;
-    top: 419px;
+    top: 380px;
     left: 1020px;
     overflow: hidden;
 }
@@ -435,7 +435,7 @@
     width: 100px;
     color: rgba(51,51,51,1);
     position: absolute;
-    top: 422px;
+    top: 380px;
     left: 931px;
     font-family: Arial;
     font-weight: normal;
@@ -448,7 +448,7 @@
     width: 50px;
     color: rgba(51,51,51,1);
     position: absolute;
-    top: 425px;
+    top: 385px;
     left: 1022px;
     font-family: Arial;
     font-weight: normal;
@@ -461,7 +461,7 @@
     width: 50px;
     color: rgba(51,51,51,1);
     position: absolute;
-    top: 425px;
+    top: 385px;
     left: 1053px;
     font-family: Arial;
     font-weight: normal;
