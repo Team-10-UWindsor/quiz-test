@@ -590,3 +590,7 @@ C:\Users\btalla\Source\Repos\quiz-test5\Quiz_Master\Quiz_Master\obj\Debug\Quiz_M
 C:\Users\btalla\Source\Repos\quiz-test5\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CopyComplete
 C:\Users\btalla\Source\Repos\quiz-test5\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.dll
 C:\Users\btalla\Source\Repos\quiz-test5\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.pdb
+C:\Users\btalla\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csprojAssemblyReference.cache
+C:\Users\btalla\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CoreCompileInputs.cache
+C:\Users\btalla\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.dll
+C:\Users\btalla\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.pdb
