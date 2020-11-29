@@ -19,34 +19,58 @@
         <span class="v4505_612">QUIZ</span>
         <div class="v4505_623"><div class="v4505_624"></div>
             </div>
-        <span class="v4505_626">Employer Name</span>
-        <span class="v4505_627">Employer ID</span>
-        <label class="v4505_628" for="emp_name" id="emp_name">Iron Man</label>
-        <label class="v4505_629" for="emp_id" id="emp_id">EMP012345</label>
+        <span class="v4505_626">Employee Name</span>
+        <span class="v4505_627">Employee ID</span>
+
+     
+          <asp:Label ID="emp_name" class="v4505_628" runat="server" Text="Employee_Name"></asp:Label>
+            <asp:Label ID="emp_id" class="v4505_629" runat="server" Text="Employee_ID"></asp:Label>
+
         <div class="v4505_630">
             <div class="v4505_631">
                 <div class="v4505_632"></div>
-               <!-- <asp:Button ID="next" runat="server" class="v4505_633" Text="Next" />-->
+                <asp:Button ID="dashboard" runat="server" class="v4505_633" Text="Dashboard" />
                 
              </div></div>
-      
+      <!--
             <ul v4505_638 id="list">
           </ul>
          
 
-        <span class="v4505_638"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="www.google.com">Quiz 1</asp:HyperLink></span>
-        <span class="v4505_639"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="www.google.com">Quiz 2</asp:HyperLink></span>
-        <span class="v4505_640"><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="www.google.com">Quiz 3</asp:HyperLink></span>
-        <span class="v4505_641"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="www.google.com">Quiz 4</asp:HyperLink></span>
-        <span class="v4505_642"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="www.google.com">Quiz 5</asp:HyperLink></span>
-        <span class="v4505_643"><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="www.google.com">Quiz 6</asp:HyperLink></span>
+        <span class="v4505_638">Quiz 1</span>
+        <span class="v4505_639">Quiz 3</span>
+        <span class="v4505_640">Quiz 5</span>
+        <span class="v4505_641">Quiz 2</span>
+        <span class="v4505_642">Quiz 4</span>
+        <span class="v4505_643">Quiz 6</span>
+     -->
+
+     
     
         <span class="v4505_644">Empoyee details</span>
         <div class="name"></div>
         <span class="v4505_650">All Quizes</span>
         <div class="v4505_731"></div>
         </div>
-    </form>
+
+ <div class="v4505_638">
+         <table>
+          <asp:Repeater ID="Repeater_2" runat="server">
+                          <ItemTemplate>
+                              <table>
+                                  <tr>
+                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id=' ><%#Eval("Quiz_Name")%></asp:HyperLink></td>
+                                      
+                                      
+                                      
+                                  </tr>
+                               </table>
+                            </ItemTemplate>
+          </asp:Repeater>  
+     </table>
+ </div>
+
+</form>
 </body>
 </html>
  

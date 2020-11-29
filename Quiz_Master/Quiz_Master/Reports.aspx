@@ -10,8 +10,9 @@
       <title>Reports</title>
 </head>
 <body>
+       <div class="v4505_657">
     <form runat="server">
-      <div class="v4505_657">
+   
               <div class="v4505_658">
                   <div class="v4505_659"></div>
                   <div class="v4505_660"></div>
@@ -23,8 +24,11 @@
               </div>
               <span class="v4505_675">Employee Name</span>
               <span class="v4505_676">Employee ID</span>
-              <label class="v4505_677" for="emp_name" id="emp_name">Iron Man</label>
-              <label class="v4505_678" for="emp_id" id="emp_id">EMP012345</label>             
+
+          <asp:Label ID="emp_name" class="v4505_677" runat="server" Text="Employee_Name"></asp:Label>
+            <asp:Label ID="emp_id" class="v4505_678" runat="server" Text="Employee_ID"></asp:Label>
+           
+
               <div class="v4505_679">
                   <div class="v4505_680">
                       <div class="v4505_681"></div>
@@ -50,23 +54,36 @@
                   -->
                   
 
-                  <div class="v4505_698" style="overflow:scroll;height:80px;width:100%;overflow:auto">>  </div>
+                  <div class="v4505_698">  
                       <table>
                       <tr class="v4505_697">
                           <th class="v4505_700">Participant Name</th>
                           <th class="v4505_701">Score</th>
-                      </tr>
-                       </table>
-                      <asp:Repeater ID="Repeater_1" runat="server">
-                          <ItemTemplate>
-                              <table class="v4505_702">
-                                  <tr>
-                                      <td><%#Eval("Participant_Name")%></td>
-                                      <td ><%#Eval("Percentage")%></td>
-                                  </tr>
-                               </table>
-                            </ItemTemplate>
-                     </asp:Repeater>               
+                      </tr> 
+                      </table>
+                      <div class="v4505_702"> 
+                          <table>
+                              <asp:Repeater ID="Repeater_1" runat="server">
+                                  <ItemTemplate>
+                                      <tr>
+                                          <td><%#Eval("Participant_Name")%></td>
+                                      </tr>
+                                  </ItemTemplate>
+                     </asp:Repeater> 
+                           </table>
+                              </div>
+                      <div class="v4505_705"> 
+                          <table>
+                              <asp:Repeater ID="Repeater_2" runat="server">
+                                  <ItemTemplate>
+                                      <tr>
+                                          <td><%#Eval("Percentage")%></td>
+                                      </tr>
+                                  </ItemTemplate>
+                     </asp:Repeater> 
+                           </table>
+                              </div>
+                      </div>
 
                   <!--
                   <div class="v4505_697"></div>         
@@ -74,8 +91,9 @@
                   -->
                   </div>
               <div class="v4505_722"></div>
-          </div>
-        </form>
+        </form>  
+        </div>
+        
 </body>
 </html>
 

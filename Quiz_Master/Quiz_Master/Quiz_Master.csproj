@@ -115,6 +115,7 @@
     <Content Include="Dashboard.aspx" />
     <Content Include="Dashboard.css" />
     <Content Include="Default.aspx" />
+    <Content Include="EmployerLogin.aspx" />
     <Content Include="Employer_Login.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -215,6 +216,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerLogin.aspx.cs">
+      <DependentUpon>EmployerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployerLogin.aspx.designer.cs">
+      <DependentUpon>EmployerLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employer_Login.aspx.cs">
       <DependentUpon>Employer_Login.aspx</DependentUpon>

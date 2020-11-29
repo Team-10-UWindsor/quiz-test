@@ -11,8 +11,10 @@ namespace Quiz_Master
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
+           
+                // quiz.ClearSelection();
+               emp_name.Text = Session["activeUser"].ToString();
+               emp_id.Text = Session["activeUserId"].ToString();            
         }
 
         protected void next_Click(object sender, EventArgs e)
