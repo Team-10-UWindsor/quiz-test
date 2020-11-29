@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="QuizMaster20201128022209" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\anish\\source\\repos\\Project102\\Quiz_Master\\Quiz_Master\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\anish\\source\\repos\\Project102\\Quiz_Master\\Quiz_Master\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="con-Web.config Connection String" description="con Connection String used in web.config by the application to access the database." value="Server=tcp:qmaster.database.windows.net,1433;Initial Catalog=QuizProject;Persist Security Info=False;User ID=adminase;Password=Qwerty@12345;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\anish\\source\\repos\\Project102\\Quiz_Master\\Quiz_Master\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='con']/@connectionString" />
+  </parameter>
+</parameters>
