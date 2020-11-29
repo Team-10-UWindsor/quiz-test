@@ -59,7 +59,11 @@
                           <ItemTemplate>
                               <table>
                                   <tr>
-                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id=' ><%#Eval("Quiz_Name")%></asp:HyperLink></td>
+                                      var id = <%#Eval("Quiz_Id")%>;
+                                    <!--   <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id=' Click="linkGoSomewhere_Click"><%#Eval("Quiz_Name")%></asp:HyperLink></td> -->
+                                      <td>
+                                          <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Text='<%#Eval("Quiz_Id")%>'><%#Eval("Quiz_Name")%></asp:LinkButton>
+                                      </td>
                                       
                                       
                                       
