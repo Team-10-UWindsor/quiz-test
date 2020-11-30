@@ -220,7 +220,6 @@ C:\Users\anish\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\bin\roslyn\vbc.exe
 C:\Users\anish\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\bin\roslyn\vbc.rsp
 C:\Users\anish\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\bin\roslyn\VBCSCompiler.exe
 C:\Users\anish\Source\Repos\quiz-test\Quiz_Master\Quiz_Master\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csprojAssemblyReference.cache
 C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.csproj.CoreCompileInputs.cache
 C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.dll
 C:\Users\Nidhi\Source\Repos\QuizMaster\Quiz_Master\Quiz_Master\obj\Debug\Quiz_Master.pdb

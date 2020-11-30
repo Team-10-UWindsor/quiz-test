@@ -28,7 +28,7 @@ namespace Quiz_Master
         {
             {
                 string Employer_Name = string.Empty;
-                string Employer_Id;
+                int Employer_Id;
                 if (checkbox_flag == 1)
                 {
                     try
@@ -50,7 +50,7 @@ namespace Quiz_Master
                             {
                                 Employer_Name = user_name.Text;
                                 Session["activeUser"] = Employer_Name;
-                                Employer_Id = dr[0].ToString();
+                                Employer_Id = (int) dr[0];
                                 Session["activeUserId"] = Employer_Id;
 
                                 // Response.Write("<script>alert('" + dr.GetValue(1).ToString() + "');</script>");
