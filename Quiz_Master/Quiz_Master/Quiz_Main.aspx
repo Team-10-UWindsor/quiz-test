@@ -65,14 +65,14 @@
                 <asp:Button ID="done" runat="server" class="v0_184" Text="Done" OnClick="done_Click"   />
             </div>
             <div class="v0_185">
-                <div class="v0_186"></div>
+                <div class=""></div>
                 <asp:Button ID="next" runat="server" class="v0_187" Text="Next"  OnClick="next_Click" />
             </div>
 
         </div>
 
         <div class="v4535_6"></div>
-        <div class="v4536_124"></div>
+        <div class=""></div>
         <asp:Button ID="prev" runat="server" Text="Prev"  class="v4536_126" OnClick="prev_Click"/>
        
         <span class="v0_189"><asp:Label ID ="question_no" runat="server">Question 1 of 5</asp:Label></span>
