@@ -46,7 +46,10 @@ namespace Quiz_Master
                 {
                     quiz.Add(que);
                 }
-                qds.uploadQuiz(quiz, (int)Session["activeUserId"]);
+                int quiz_id = qds.uploadQuiz(quiz, (int)Session["activeUserId"], Session["Quiz_Name"].ToString(), (int)Session["Duration"]);
+                Session["Quiz_Id"] = quiz_id;
+                Response.Redirect("View_Ques.aspx");
+
             }
             else
             {
@@ -65,19 +68,19 @@ namespace Quiz_Master
             optionD.Text = que["optionD"].ToString();
             if(que["que_soln"] != null)
             {
-                if (que["optionA"].ToString().Equals(que["que_soln"].ToString()))
+                if ((optionA.Text.ToString().Trim()).Equals(que["que_soln"].ToString().Trim()))
                 {
                     rdA.Checked = true;
                 }
-                else if (que["optionB"].ToString().Equals(que["que_soln"].ToString()))
+                else if ((optionB.Text.ToString().Trim()).Equals(que["que_soln"].ToString().Trim()))
                 {
                     rdB.Checked = true;
                 }
-                else if (que["optionC"].ToString().Equals(que["que_soln"].ToString()))
+                else if ((optionC.Text.ToString().Trim()).Equals(que["que_soln"].ToString().Trim()))
                 {
                     rdC.Checked = true;
                 }
-                else if (que["optionD"].ToString().Equals(que["que_soln"].ToString()))
+                else if ((optionD.Text.ToString().Trim()).Equals(que["que_soln"].ToString().Trim()))
                 {
                     rdD.Checked = true;
                 }
@@ -160,6 +163,7 @@ namespace Quiz_Master
                 }
                 if (count <= quiz.Count)
                 {
+                    setUncheck();
                     autoPopulate();
                 }
                 else
@@ -199,6 +203,7 @@ namespace Quiz_Master
                 }
 
                 count--;
+                setUncheck();
                 que_no.Text = count.ToString() + ".";
                 autoPopulate();
                 if (count == 1)

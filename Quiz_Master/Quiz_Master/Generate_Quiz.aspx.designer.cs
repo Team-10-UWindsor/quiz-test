@@ -60,6 +60,15 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.TextBox question;
 
         /// <summary>
+        /// QuestionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator QuestionValidator;
+
+        /// <summary>
         /// rdA control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,15 @@ namespace Quiz_Master
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox optionA;
+
+        /// <summary>
+        /// optionAValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator optionAValidator;
 
         /// <summary>
         /// rdB control.
@@ -96,6 +114,15 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.TextBox optionB;
 
         /// <summary>
+        /// optionBValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator optionBValidator;
+
+        /// <summary>
         /// rdC control.
         /// </summary>
         /// <remarks>
@@ -114,6 +141,15 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.TextBox optionC;
 
         /// <summary>
+        /// optionCValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator optionCValidator;
+
+        /// <summary>
         /// rdD control.
         /// </summary>
         /// <remarks>
@@ -130,5 +166,14 @@ namespace Quiz_Master
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox optionD;
+
+        /// <summary>
+        /// optionDValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator optionDValidator;
     }
 }

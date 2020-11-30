@@ -45,17 +45,26 @@
             -->
         <div class="v4505_384">
             <div class="v4505_379">
-            <asp:RadioButton ID="report" GroupName="dashboard" runat="server"  />
+            <asp:RadioButton ID="report" GroupName="dashboard" runat="server" AutoPostBack="True"  />
             </div>
             <label class="v4505_269" for="view_report">View Report</label><br>       
             </div>
             <div class="v4505_387">
-            <asp:RadioButton ID="quiz" GroupName="dashboard" runat="server" />
+            <asp:RadioButton ID="quiz" GroupName="dashboard" runat="server" OnCheckedChanged="quiz_CheckedChanged" AutoPostBack="True" />
             </div>
             <label class="v4505_386" for="generate_quiz">Generate Quiz</label><br>
         <div class="name"></div>
         <div class="name"></div>        
-        <div class="v4505_726"></div>        
+        <div class="v4505_726"></div>
+
+        <div class="quizname">
+            <asp:TextBox ID="quiz_name" runat="server" placeholder=" Enter Quiz Name" BackColor="#EDE9E8" BorderColor="White" BorderStyle="None" BorderWidth="0px" Font-Size="Large" ForeColor="#333333" Height="34px" ToolTip="Enter Quiz Name" Width="380px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="QuizNameValidator" runat="server" ErrorMessage="Please Enter Quiz Name" ControlToValidate="quiz_name"></asp:RequiredFieldValidator>
+        </div>
+        <div class="duration">
+            <asp:TextBox ID="duration" runat="server" placeholder=" Enter Quiz Duration (in mins)" BackColor="#EDE9E8" BorderColor="White" BorderStyle="None" BorderWidth="0px" Font-Size="Large" ForeColor="#333333" Height="34px" ToolTip="Enter Quiz Duration (in mins)" Width="380px" TextMode="Number"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="durationValidator" runat="server" ErrorMessage="Enter Duration for which Quiz will be active" ControlToValidate="duration"></asp:RequiredFieldValidator>
+        </div>
         <!--
             <span class="v4505_386">Generate Quiz</span>
  <span class="v4505_401">Create New Quiz</span>

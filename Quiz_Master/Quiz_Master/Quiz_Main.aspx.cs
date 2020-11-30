@@ -156,7 +156,7 @@ namespace Quiz_Master
             Evaluate eval = new Evaluate();
             eval.doEvaluate(q_ans, (int) Session["PID"], (int) Session["QID"]);
             //Response.Write("<script>alert('" + percent + "');</script>");
-            //Session.Clear();
+            Session.Clear();
             Response.Redirect("Participant_Login.aspx");
         }
 

@@ -24,12 +24,14 @@
                   <div class="v0_47"></div>
                   <div class="name"></div>
                   <asp:TextBox ID="user_name"  class="v0_49" placeholder="User name" name="user_name" runat="server" ></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="UserNameValidator" runat="server" ErrorMessage="Please Enter Your Username" ControlToValidate="user_name"></asp:RequiredFieldValidator>
                
               </div>
               <div class="v0_50">
                   <div class="v0_51"></div>
                   <div class="name"></div>
-                  <asp:TextBox ID="password" class="v0_53" name="password" placeholder="Password" runat="server"></asp:TextBox>
+                  <asp:TextBox ID="password" class="v0_53" name="password" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="PasswordValidator" runat="server" ErrorMessage="Please Enter Your Password" ControlToValidate="password"></asp:RequiredFieldValidator>
                
               </div>
               <div class="v0_54"></div>

@@ -28,6 +28,7 @@
                 <div class="name"></div>
                 
                 <asp:TextBox ID="quiz_id" class="v0_89" runat="server" name="quiz_id" placeholder="Enter Quiz ID"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="QuizIdValidator" runat="server" ErrorMessage="Quiz ID Required to attempt the Quiz" ControlToValidate="quiz_id"></asp:RequiredFieldValidator>
 
             </div>
             <div class="v0_90"></div>

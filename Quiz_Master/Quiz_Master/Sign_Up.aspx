@@ -23,27 +23,33 @@
                 <div class="v4539_84"></div>
                 <div class="name"></div>
                 <asp:TextBox ID="confirmpswd" name="confirm_pswd" class="v4539_86" runat="server" placeholder="Confirm Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="CPasswordValidator" runat="server" ErrorMessage="Please Confirm Your Password" ControlToValidate="confirmpswd"></asp:RequiredFieldValidator>
+                <asp:CompareValidator ID="CPassValidate" runat="server" ErrorMessage="Passwords Do Not Match" ControlToValidate="confirmpswd" ControlToCompare="password" ToolTip="Both Passwords must be same"></asp:CompareValidator>
             </div>
             <div class="v4539_47">
                 <div class="v4539_48"></div>
                 <div class="name"></div>
-                <asp:TextBox ID="password" class="v4539_50" runat="server" name="password" placeholder="Password"></asp:TextBox>
+                <asp:TextBox ID="password" class="v4539_50" runat="server" name="password" placeholder="Password" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="PasswordValidator" runat="server" ErrorMessage="Enter a Password" ControlToValidate="password"></asp:RequiredFieldValidator>
            </div>
            <div class="v4539_43">
                <div class="v4539_44"></div>
                <div class="name"></div>
-               <asp:TextBox ID="emailId" class="v4539_46" runat="server" name="emailid" placeholder="Email Id"></asp:TextBox>
+               <asp:TextBox ID="emailId" class="v4539_46" runat="server" name="emailid" placeholder="Email Id" TextMode="Email"></asp:TextBox>
+               <asp:RequiredFieldValidator ID="EmailValidator" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="emailId"></asp:RequiredFieldValidator>
            </div>
             <span class="v4539_16">Create your account</span>
             <div class="v4539_17">
                 <div class="v4539_18"></div>
                 <div class="name"></div>
                 <asp:TextBox ID="username" class="v4539_20" runat="server" name="user_name" placeholder="User name"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="UNameValidator" runat="server" ErrorMessage="Enter Username" ControlToValidate="username"></asp:RequiredFieldValidator>
             </div>
             <div class="v4539_21">
                 <div class="v4539_22"></div>
                 <div class="name"></div>
-                <asp:TextBox ID="phone" class="v4539_24" runat="server" name="phone" placeholder="Phone"></asp:TextBox>
+                <asp:TextBox ID="phone" class="v4539_24" runat="server" name="phone" placeholder="Phone" TextMode="Phone"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="PhNoValidator" runat="server" ErrorMessage="Enter Your Phone Number" ControlToValidate="phone"></asp:RequiredFieldValidator>
             </div>
             <div class="v4539_27">
                 <div class="v4539_28"></div>

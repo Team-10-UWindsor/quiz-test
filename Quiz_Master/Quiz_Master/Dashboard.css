@@ -443,3 +443,21 @@
     left: 0px;
     border: 1.5px solid rgba(117,117,117,1);
 }
+
+.quizname {
+    width: 384px;
+    height: 35px;
+    position: absolute;
+    top: 480px;
+    left: 306px;
+    overflow: hidden;
+}
+
+.duration {
+    width: 384px;
+    height: 35px;
+    position: absolute;
+    top: 520px;
+    left: 306px;
+    overflow: hidden;
+}

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rosario&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
     <link href="generate_quiz.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>QUIZ</title>
 </head>
 
 <body>
@@ -55,6 +55,7 @@
         <div class="v4505_506"></div>
         <div class="name"></div>
         <asp:TextBox ID="question" class="v4505_508" runat="server" placeholder="Enter Question" name="enterquestion" TextMode="MultiLine"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="QuestionValidator" runat="server" ErrorMessage="Please Enter The Question" ControlToValidate="question"></asp:RequiredFieldValidator>
         
     </div>
 
@@ -70,6 +71,7 @@
                 <div class="v4505_511"></div>
                 <div class="name"></div>
                 <asp:TextBox ID="optionA"  class="v4505_513" runat="server" placeholder="Enter Option A" name="enteroption1" TextMode="MultiLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="optionAValidator" runat="server" ErrorMessage="Enter Option A" ControlToValidate="optionA"></asp:RequiredFieldValidator>
                 </div>
             </asp:TableCell>
         </asp:TableRow>
@@ -84,6 +86,7 @@
                 <div class="v4505_515"></div>
                 <div class="name"></div>
                 <asp:TextBox ID="optionB" class="v4505_517" runat="server" placeholder="Enter Option B" name="enteroption2" TextMode="MultiLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="optionBValidator" runat="server" ErrorMessage="Enter Option B" ControlToValidate="optionB"></asp:RequiredFieldValidator>
                 </div>
             </asp:TableCell>
         </asp:TableRow>
@@ -98,6 +101,7 @@
                 <div class="v4505_519"></div>
                 <div class="name"></div>
                 <asp:TextBox ID="optionC" class="v4505_521" runat="server" placeholder="Enter Option C" name="enteroption3" TextMode="MultiLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="optionCValidator" runat="server" ErrorMessage="Enter Option C" ControlToValidate="optionC"></asp:RequiredFieldValidator>
                 </div>
             </asp:TableCell>
         </asp:TableRow>
@@ -112,6 +116,7 @@
                 <div class="v4505_523"></div>
                 <div class="name"></div>
                 <asp:TextBox ID="optionD" class="v4505_525" runat="server" placeholder="Enter Option D" name="enteroption5" TextMode="MultiLine"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="optionDValidator" runat="server" ErrorMessage="Enter Option D" ControlToValidate="optionD"></asp:RequiredFieldValidator>
                 </div>
             </asp:TableCell>
         </asp:TableRow>

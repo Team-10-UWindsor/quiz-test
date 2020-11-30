@@ -24,6 +24,15 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.TextBox Participant_name;
 
         /// <summary>
+        /// NameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameValidator;
+
+        /// <summary>
         /// Participant_Email control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Quiz_Master
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Participant_Email;
+
+        /// <summary>
+        /// EmailValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailValidator;
 
         /// <summary>
         /// submit control.

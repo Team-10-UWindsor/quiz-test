@@ -21,9 +21,10 @@ namespace Quiz_Master
 
             if (!IsPostBack)
             {
-                
+                String query = "SELECT Question_Description FROM   Question WHERE  Question_Id IN (SELECT Question_Id FROM[dbo].[Quiz_Question] Where Quiz_Id = " + (int)Session["Quiz_Id"] + ")";
                 SqlConnection con = new SqlConnection(strcon);
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT Question_Description FROM   Question WHERE  Question_Id IN (SELECT Question_Id FROM[dbo].[Quiz_Question] Where Quiz_Id = 1)", con);
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 // Repeater Rpt1 = (Repeater)Master.FindControl("Repeater_1");

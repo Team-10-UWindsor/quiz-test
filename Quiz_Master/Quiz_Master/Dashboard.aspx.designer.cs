@@ -61,5 +61,9 @@ namespace Quiz_Master
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton fetch_previous_quiz;
+
+        protected global::System.Web.UI.WebControls.TextBox quiz_name;
+
+        protected global::System.Web.UI.WebControls.TextBox duration;
     }
 }

@@ -21,7 +21,7 @@ namespace Quiz_Master
         String optionC;
         String optionD;
 
-        int quiz_id;
+        static int quiz_id;
         int emp_id;
         static DateTime pd;
         
@@ -113,11 +113,11 @@ namespace Quiz_Master
             return quiz;
         }
 
-        public void uploadQuiz(List<Dictionary<String, String>> quiz, int emp_id)
+        public int uploadQuiz(List<Dictionary<String, String>> quiz, int emp_id, String q_name, int duration)
         {
             pd = System.DateTime.Now;
             this.emp_id = emp_id;
-
+            
             SqlConnection con = new SqlConnection(strcon);
 
             if (con.State == ConnectionState.Closed)
@@ -126,9 +126,9 @@ namespace Quiz_Master
             }
 
             SqlCommand cmd = new SqlCommand("Insert into Quiz (Quiz_Name, Quiz_Publishdate, Quiz_Duration, Employer_Id) values (@qname, @qpd, @dur, @eid)", con);
-            cmd.Parameters.AddWithValue("@qname", "Quiz");
+            cmd.Parameters.AddWithValue("@qname", q_name);
             cmd.Parameters.AddWithValue("@qpd", pd);
-            cmd.Parameters.AddWithValue("@dur", 30);
+            cmd.Parameters.AddWithValue("@dur", duration);
             cmd.Parameters.AddWithValue("@eid", emp_id);
             cmd.ExecuteNonQuery();
 
@@ -139,6 +139,8 @@ namespace Quiz_Master
 
             uploadQuestion(quiz);
             uploadOptions(quiz);
+
+            return quiz_id;
         }
 
         public void uploadQuestion(List<Dictionary<String, String>> quiz)
@@ -150,9 +152,10 @@ namespace Quiz_Master
                 con.Open();
             }
 
-            SqlCommand cmd = new SqlCommand("Insert into Question (Question_Description, Question_Solution) values (@desc, @soln)", con);
+            
             for(int i = 0; i< quiz.Count; i++)
             {
+                SqlCommand cmd = new SqlCommand("Insert into Question (Question_Description, Question_Solution) values (@desc, @soln)", con);
                 cmd.Parameters.AddWithValue("@desc", quiz[i]["que_des"]);
                 cmd.Parameters.AddWithValue("@soln", quiz[i]["que_soln"]);
                 cmd.ExecuteNonQuery();
@@ -187,9 +190,10 @@ namespace Quiz_Master
             }
             quizdr.Close();
 
-            SqlCommand cmd1 = new SqlCommand("Select Question_Id from Question where Question_Description = @qd and Question_Solution = @qs", con);
+            
             for(int i = 0; i < quiz.Count; i++)
             {
+                SqlCommand cmd1 = new SqlCommand("Select Question_Id from Question where Question_Description = @qd and Question_Solution = @qs", con);
                 cmd1.Parameters.AddWithValue("@qd", quiz[i]["que_des"].ToString());
                 cmd1.Parameters.AddWithValue("@qs", quiz[i]["que_soln"].ToString());
 
@@ -204,11 +208,12 @@ namespace Quiz_Master
                 dr.Close();
             }
 
-            SqlCommand cmd = new SqlCommand("Insert into Options (Question_Id, OptionA, OptionB, OptionC, OptionD) values (@que_id, @optA, @optB, @optC, @optD)", con);
-            SqlCommand cmd2 = new SqlCommand("Insert into Quiz_Question (Question_Id, Quiz_Id) values (@que_id, @q_id)", con);
+            
+            
 
             for (int i = 0; i < quiz.Count && i < q_id.Count; i++)
             {
+                SqlCommand cmd2 = new SqlCommand("Insert into Quiz_Question (Question_Id, Quiz_Id) values (@que_id, @q_id)", con);
                 cmd2.Parameters.AddWithValue("@que_id", q_id[i]);
                 cmd2.Parameters.AddWithValue("@q_id", quiz_id);
                 cmd2.ExecuteNonQuery();
@@ -216,6 +221,7 @@ namespace Quiz_Master
 
                 for (int i = 0; i < quiz.Count && i < q_id.Count; i++)
             {
+                SqlCommand cmd = new SqlCommand("Insert into Options (Question_Id, OptionA, OptionB, OptionC, OptionD) values (@que_id, @optA, @optB, @optC, @optD)", con);
                 cmd.Parameters.AddWithValue("@que_id", q_id[i]);
                 cmd.Parameters.AddWithValue("@optA", quiz[i]["optionA"]);
                 cmd.Parameters.AddWithValue("@optB", quiz[i]["optionB"]);

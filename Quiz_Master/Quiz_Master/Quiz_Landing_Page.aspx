@@ -24,11 +24,13 @@
             <div class="v0_112"></div>
             <div class="name"></div>
             <asp:TextBox ID="Participant_name" name="Participant_name" placeholder="Enter Participant Name" class="v0_114" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="NameValidator" runat="server" ErrorMessage="Please Enter Your Name" ControlToValidate="Participant_name"></asp:RequiredFieldValidator>
         </div>
         <div class="v0_115">
             <div class="v0_116"></div>
             <div class="name"></div>
             <asp:TextBox ID="Participant_Email" class="v0_118" name="Participant_Email" placeholder="Enter Participant Email" runat="server" TextMode="Email"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="EmailValidator" runat="server" ErrorMessage="PleaseEnter Your E-mail ID" ControlToValidate="Participant_Email"></asp:RequiredFieldValidator>
         </div>
         <div class="v0_119">
             <div class="v0_120"></div>
