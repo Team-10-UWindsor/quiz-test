@@ -54,6 +54,7 @@ namespace Quiz_Master
             {
                 Response.Write("<script>alert('" + ex.Message + " ');</script>");
             }
+            
             Response.Write("<script>alert('Good luck for the quiz, " + Participant_name.Text.Trim() + "! ');</script>");
             Response.Redirect("Quiz_Main.aspx");
         }
