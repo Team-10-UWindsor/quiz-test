@@ -27,11 +27,11 @@ namespace Quiz_Master
             }
             else if (quiz.Checked)
             {
-                Response.Redirect("ViewQuiz.aspx");
+                Response.Redirect("Generate_Quiz.aspx");
             }
             else if (report.Checked)
             {
-                Response.Redirect("Reports.aspx");
+                Response.Redirect("ViewQuiz.aspx");
             }
 
         }
