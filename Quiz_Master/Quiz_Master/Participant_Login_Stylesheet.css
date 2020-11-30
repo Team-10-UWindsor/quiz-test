@@ -120,7 +120,7 @@
 }
 
 .v0_89 {
-    width: 384px;
+    width: 370px;
     background: rgba(243,243,243,1);
     position: absolute;
     top: 12px;
@@ -150,21 +150,24 @@
 }
 
 .v0_91 {
+    width: 370px;
+    height: 34px;
+    background: rgba(32,74,99,1);
     border-style: none;
     border-color: inherit;
     border-width: 0px;
-    width: 40px;
     position: absolute;
-    top: 211px;
-    left: 227px;
+    top: 203px;
+    left: 70px;
     font-family: Arial;
     font-weight: normal;
     font-size: 16px;
     opacity: 1;
-    text-align: left;
+    text-align: center;
     color: mintcream;
     outline: none;
-    height: 25px;
+    border: 0px none;
+    outline: none;
 }
 
 .v0_92 {

@@ -36,7 +36,7 @@
         </div>
         </form>
         
-        <span class="v0_129">Enter empoyee details</span>
+        <span class="v0_129">Enter participant details</span>
         <span class="v0_130">Question 1 of 5</span>
         <span class="v0_131">Question 1:</span>
         <span class="v0_132">What will be the compound interest on a sum of Rs. 25,000 after 3 years at the rate of 12 p.c.p.a.?</span>

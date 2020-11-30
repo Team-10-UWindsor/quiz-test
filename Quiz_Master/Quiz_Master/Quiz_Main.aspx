@@ -23,12 +23,12 @@
             <div class="v0_175"></div>
         </div>
 
-        <span class="v0_188">Empoyee details:</span>
-        <span class="v0_177">Employee Name</span>
-        <span class="v0_178">Employee ID</span>
-        <span class="v0_179">Iron Man</span>
-        <span class="v0_180">EMP012345</span>
-
+        <span class="v0_188">Participant details:</span>
+        <span class="v0_177">Participant Name</span>
+        <span class="v0_178">Participant ID</span>
+         <asp:Label ID="emp_name" class="v0_179" runat="server" Text="Participant_Name"></asp:Label>
+         <asp:Label ID="emp_id" class="v0_180" runat="server" Text="Participant_ID"></asp:Label>
+       
 
 
 
@@ -77,19 +77,7 @@
        
         <span class="v0_189"><asp:Label ID ="question_no" runat="server">Question 1 of 5</asp:Label></span>
 
-        <!--<span class="v0_190">Question 1:</span>-->
-
-      
-
-        
-
-
-
-
-
-        <!--
-            <ol id="list"></ol>
-         -->
+       
 
          <span class="v0_190" >
             <asp:PlaceHolder ID="PlaceHolder1" runat="server" >
@@ -98,9 +86,6 @@
                             <asp:TableCell>
                                 <asp:Label ID="Ques_desc" runat="server"></asp:Label>
                             </asp:TableCell>
-                        </asp:TableRow>
-                        <asp:TableRow>
-                            <asp:TableCell><br /></asp:TableCell>
                         </asp:TableRow>
                         <asp:TableRow>
                             <asp:TableCell><br /></asp:TableCell>
@@ -141,7 +126,8 @@
 
 
         <span class="v0_192">
-            <asp:ListBox ID="que_list" runat="server" Height="270px" Font-Bold="True" Font-Names="Verdana" Font-Size="Large" Font-Underline="False" ForeColor="#004DBF" AutoPostBack="True" BackColor="White" CssClass="lb_quelist" OnSelectedIndexChanged="que_list_SelectedIndexChanged" Width="365px"></asp:ListBox>
+            <span class="v0_219">All Questions</span>
+            <asp:ListBox ID="que_list" runat="server" style="line-height:2.2" Height="270px" Font-Bold="True" Font-Names="Verdana" Font-Size="Large" Font-Underline="False" ForeColor="#004DBF" AutoPostBack="True" BackColor="White" CssClass="lb_quelist" OnSelectedIndexChanged="que_list_SelectedIndexChanged" Width="365px"></asp:ListBox>
         </span>
         <!--<span class="v0_193">The difference between simple interest and compound on Rs. 1200 for one year at 10% per annum reckoned half-yearly is ?</span>
         <span class="v0_194">At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1348.32 in 2 years?</span>
@@ -152,11 +138,8 @@
 
         <span class="v0_201">Time Left:</span>
         
-        <label id="duration" class="v0_202">05:00
-        </label>
+        <label id="duration" class="v0_202">05:00</label>
              <label  class="v0_217">mins</label>
-            <!--<span class="v0_202">15:00 mins remaining</span>-->
-
         <div class="name"></div>
         <div class="name"></div>
         <div class="name"></div>
@@ -167,11 +150,6 @@
         <div class="name"></div>
         
     </div>
-
-        
-       
- 
-
 </form>
 </body>
 </html>
