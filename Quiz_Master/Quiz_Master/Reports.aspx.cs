@@ -15,7 +15,7 @@ namespace Quiz_Master
     {
 
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-     
+
         protected void Page_Load(object sender, EventArgs e)
         {
             emp_name.Text = Session["activeUser"].ToString();
@@ -23,9 +23,9 @@ namespace Quiz_Master
 
             if (!IsPostBack)
             {
-             
+
                 SqlConnection con = new SqlConnection(strcon);
-                SqlDataAdapter sda = new SqlDataAdapter("Select Participant.Participant_Name, [dbo].[Evaluation].Percentage from Evaluation Inner Join Participant On [dbo].[Participant].Participant_Id =[dbo].[Evaluation].Participant_Id",con);
+                SqlDataAdapter sda = new SqlDataAdapter("Select Participant.Participant_Name, [dbo].[Evaluation].Percentage from Evaluation Inner Join Participant On [dbo].[Participant].Participant_Id =[dbo].[Evaluation].Participant_Id", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 // Repeater Rpt1 = (Repeater)Master.FindControl("Repeater_1");

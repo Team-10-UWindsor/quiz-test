@@ -11,7 +11,7 @@ namespace Quiz_Master
 {
 
 
-    public partial class QuizCreate
+    public partial class Generate_Quiz
     {
 
         /// <summary>
@@ -42,13 +42,13 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.Button done;
 
         /// <summary>
-        /// new_ques control.
+        /// que_no control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button new_ques;
+        protected global::System.Web.UI.WebControls.Label que_no;
 
         /// <summary>
         /// question control.
@@ -60,39 +60,75 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.TextBox question;
 
         /// <summary>
-        /// enteroption2 control.
+        /// rdA control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enteroption2;
+        protected global::System.Web.UI.WebControls.RadioButton rdA;
 
         /// <summary>
-        /// enteroption1 control.
+        /// optionA control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enteroption1;
+        protected global::System.Web.UI.WebControls.TextBox optionA;
 
         /// <summary>
-        /// enteroption3 control.
+        /// rdB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enteroption3;
+        protected global::System.Web.UI.WebControls.RadioButton rdB;
 
         /// <summary>
-        /// enteroption4 control.
+        /// optionB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enteroption4;
+        protected global::System.Web.UI.WebControls.TextBox optionB;
+
+        /// <summary>
+        /// rdC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdC;
+
+        /// <summary>
+        /// optionC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox optionC;
+
+        /// <summary>
+        /// rdD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdD;
+
+        /// <summary>
+        /// optionD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox optionD;
     }
 }

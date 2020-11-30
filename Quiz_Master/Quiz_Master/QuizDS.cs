@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
+using System.Data;
 using System.Data.SqlClient;
 using System.Web;
 using System.Web.UI;
@@ -19,6 +20,10 @@ namespace Quiz_Master
         String optionB;
         String optionC;
         String optionD;
+
+        int quiz_id;
+        int emp_id;
+        static DateTime pd;
         
         Dictionary<String, String> que;
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
@@ -105,13 +110,125 @@ namespace Quiz_Master
             }
             rd.Close();
             
-            
-
-
             return quiz;
         }
 
-       
+        public void uploadQuiz(List<Dictionary<String, String>> quiz, int emp_id)
+        {
+            pd = System.DateTime.Now;
+            this.emp_id = emp_id;
+
+            SqlConnection con = new SqlConnection(strcon);
+
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("Insert into Quiz (Quiz_Name, Quiz_Publishdate, Quiz_Duration, Employer_Id) values (@qname, @qpd, @dur, @eid)", con);
+            cmd.Parameters.AddWithValue("@qname", "Quiz");
+            cmd.Parameters.AddWithValue("@qpd", pd);
+            cmd.Parameters.AddWithValue("@dur", 30);
+            cmd.Parameters.AddWithValue("@eid", emp_id);
+            cmd.ExecuteNonQuery();
+
+            if(con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+
+            uploadQuestion(quiz);
+            uploadOptions(quiz);
+        }
+
+        public void uploadQuestion(List<Dictionary<String, String>> quiz)
+        {
+            SqlConnection con = new SqlConnection(strcon);
+
+            if(con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("Insert into Question (Question_Description, Question_Solution) values (@desc, @soln)", con);
+            for(int i = 0; i< quiz.Count; i++)
+            {
+                cmd.Parameters.AddWithValue("@desc", quiz[i]["que_des"]);
+                cmd.Parameters.AddWithValue("@soln", quiz[i]["que_soln"]);
+                cmd.ExecuteNonQuery();
+            }
+            
+            if(con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+
+        }
+
+        public void uploadOptions(List<Dictionary<String, String>> quiz)
+        {
+            SqlConnection con = new SqlConnection(strcon);
+            List<int> q_id = new List<int>();
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+
+            SqlCommand quizcmd = new SqlCommand("Select Quiz_Id from Quiz where Employer_Id = @eid and Quiz_Publishdate = @pd", con);
+            quizcmd.Parameters.AddWithValue("@eid", emp_id);
+            quizcmd.Parameters.AddWithValue("@pd", pd);
+            SqlDataReader quizdr = quizcmd.ExecuteReader();
+            if (quizdr.HasRows)
+            {
+                while (quizdr.Read())
+                {
+                    quiz_id = (int)quizdr[0];
+                }
+            }
+            quizdr.Close();
+
+            SqlCommand cmd1 = new SqlCommand("Select Question_Id from Question where Question_Description = @qd and Question_Solution = @qs", con);
+            for(int i = 0; i < quiz.Count; i++)
+            {
+                cmd1.Parameters.AddWithValue("@qd", quiz[i]["que_des"].ToString());
+                cmd1.Parameters.AddWithValue("@qs", quiz[i]["que_soln"].ToString());
+
+                SqlDataReader dr = cmd1.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        q_id.Add((int)dr[0]);
+                    }
+                }
+                dr.Close();
+            }
+
+            SqlCommand cmd = new SqlCommand("Insert into Options (Question_Id, OptionA, OptionB, OptionC, OptionD) values (@que_id, @optA, @optB, @optC, @optD)", con);
+            SqlCommand cmd2 = new SqlCommand("Insert into Quiz_Question (Question_Id, Quiz_Id) values (@que_id, @q_id)", con);
+
+            for (int i = 0; i < quiz.Count && i < q_id.Count; i++)
+            {
+                cmd2.Parameters.AddWithValue("@que_id", q_id[i]);
+                cmd2.Parameters.AddWithValue("@q_id", quiz_id);
+                cmd2.ExecuteNonQuery();
+            }
+
+                for (int i = 0; i < quiz.Count && i < q_id.Count; i++)
+            {
+                cmd.Parameters.AddWithValue("@que_id", q_id[i]);
+                cmd.Parameters.AddWithValue("@optA", quiz[i]["optionA"]);
+                cmd.Parameters.AddWithValue("@optB", quiz[i]["optionB"]);
+                cmd.Parameters.AddWithValue("@optC", quiz[i]["optionC"]);
+                cmd.Parameters.AddWithValue("@optD", quiz[i]["optionD"]);
+                cmd.ExecuteNonQuery();
+            }
+
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
 
     }
 }
