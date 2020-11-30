@@ -64,7 +64,7 @@
                 <span class="v0_125">Done</span>
             </div>
             <div class="v0_126">
-                <div class="v0_127"></div>
+                <div ></div>
                 <span class="v0_128">Next</span>
             </div>
         </div>

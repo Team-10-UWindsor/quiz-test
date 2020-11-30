@@ -249,16 +249,22 @@
 
 .v0_187 {
     width: 75px;
+    height: 24px;
     background: rgba(32,74,99,1);
-    color: mintcream;
+    opacity: 1;
     position: absolute;
-    top: 4px;
-    left: 21px;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    color: mintcream;
     font-family: Arial;
     font-weight: normal;
     font-size: 14px;
-    opacity: 1;
-    text-align: left;
+    text-align: center;
     border: 0px none;
     outline: none;
 }
@@ -320,13 +326,14 @@
     width: 365px;
     color: rgba(0,77,191,1);
     position: absolute;
-    top: 422px;
+    top: 410px;
     left: 922px;
     font-family: Arial;
     font-weight: normal;
     font-size: 14px;
     opacity: 1;
     text-align: left;
+    line-height: 3.5;
 }
 
 .v0_193 {
@@ -590,7 +597,7 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
-    top: 422px;
+    top: 380px;
 }
 
 .v4535_6 {
@@ -623,19 +630,22 @@
 }
 
 .v4536_126 {
-    border-style: none;
-    border-color: inherit;
-    border-width: 0px;
     width: 75px;
-    color: mintcream;
+    height: 24px;
     background: rgba(32,74,99,1);
+    opacity: 1;
     position: absolute;
-    top: 795px;
+    top: 791px;
     left: 1113px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    color: mintcream;
     font-family: Arial;
     font-weight: normal;
     font-size: 14px;
-    opacity: 1;
     text-align: center;
     outline: none;
     border: 0px none;
