@@ -46,7 +46,7 @@
     <div class="v4505_501">
         <div class="v4505_502">
             <div class="v4505_503"></div>
-            <asp:Button ID="done" class="v4505_500" runat="server" Text="Done" OnClick="done_Click" OnClientClick="return confirm('Changes cannot be done after this point. Are you sure you want to continue to publish?');" />
+            <asp:Button ID="done" class="v4505_500" runat="server" Text="Done" OnClick="done_Click" OnClientClick="return confirm('Changes cannot be undone after this point. Are you sure you want to continue to publish?');" />
             
         </div>
     </div>

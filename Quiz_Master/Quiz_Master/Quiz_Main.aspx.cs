@@ -180,7 +180,9 @@ namespace Quiz_Master
             eval.doEvaluate(q_ans, (int) Session["PID"], (int) Session["QID"]);
             //Response.Write("<script>alert('" + percent + "');</script>");
             Session.Clear();
-            Response.Redirect("Participant_Login.aspx");
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Thank you for participating in the Quiz!!');window.location ='Participant_Login.aspx';", true);
+            
         }
 
         protected void next_Click(object sender, EventArgs e)

@@ -45,13 +45,13 @@
                   <div class="name"></div>
                   <div class="name"></div>
               </div>
-               <a class="v0_63" href="www.google.com?">Forgot password?</a>           
+               
                
               <div class="v0_64">
                   <div class="v0_65">
-                      <asp:CheckBox ID="checkbox" runat="server" OnCheckedChanged="checkbox_CheckedChanged" />
+                   
                   </div>
-                  <span class="v0_67">By joining  I agree with  Terms & Conditions and Privacy policy</span>
+                  
               </div></div>
           <span class="v0_68">QUIZ</span>
       </div>

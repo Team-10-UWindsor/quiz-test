@@ -18,11 +18,11 @@ namespace Quiz_Master
 
             emp_name.Text = Session["activeUser"].ToString();
             emp_id.Text = Session["activeUserId"].ToString();
-            //Quiz_Name.Text = Session["Quiz_Name"].ToString();
+            Quiz_Name.Text = Session["Quiz_Name"].ToString();
 
             if (!IsPostBack)
             {
-                String query = "SELECT Question_Description FROM   Question WHERE  Question_Id IN (SELECT Question_Id FROM[dbo].[Quiz_Question] Where Quiz_Id = 1)";
+                String query = "SELECT Question_Description FROM   Question WHERE  Question_Id IN (SELECT Question_Id FROM[dbo].[Quiz_Question] Where Quiz_Id ="+ Session["Quiz_Name"].ToString()+")";
                 SqlConnection con = new SqlConnection(strcon);
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
                 
