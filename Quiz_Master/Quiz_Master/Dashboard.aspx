@@ -58,11 +58,11 @@
         <div class="v4505_726"></div>
 
         <div class="quizname">
-            <asp:TextBox ID="quiz_name" runat="server" placeholder=" Enter Quiz Name" BackColor="#EDE9E8" BorderColor="White" BorderStyle="None" BorderWidth="0px" Font-Size="Large" ForeColor="#333333" Height="34px" ToolTip="Enter Quiz Name" Width="380px"></asp:TextBox>
+            <asp:TextBox ID="quiz_name" runat="server"  placeholder=" Enter Quiz Name" BackColor="#f3f3f3" BorderStyle="None" BorderWidth="0px" Font-Size="Large" ForeColor="#333333" Height="34px" ToolTip="Enter Quiz Name" Width="380px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="QuizNameValidator" runat="server" ErrorMessage="Please Enter Quiz Name" ControlToValidate="quiz_name"></asp:RequiredFieldValidator>
         </div>
         <div class="duration">
-            <asp:TextBox ID="duration" runat="server" placeholder=" Enter Quiz Duration (in mins)" BackColor="#EDE9E8" BorderColor="White" BorderStyle="None" BorderWidth="0px" Font-Size="Large" ForeColor="#333333" Height="34px" ToolTip="Enter Quiz Duration (in mins)" Width="380px" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="duration" runat="server" placeholder=" Enter Quiz Duration (in mins)" BackColor="#f3f3f3" BorderColor="White" BorderStyle="None" BorderWidth="0px" Font-Size="Large" ForeColor="#333333" Height="34px" ToolTip="Enter Quiz Duration (in mins)" Width="380px" TextMode="Number"></asp:TextBox>
             <asp:RequiredFieldValidator ID="durationValidator" runat="server" ErrorMessage="Enter Duration for which Quiz will be active" ControlToValidate="duration"></asp:RequiredFieldValidator>
         </div>
         <!--

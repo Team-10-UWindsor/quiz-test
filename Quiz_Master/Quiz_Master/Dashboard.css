@@ -139,7 +139,7 @@
 }
 
 .v4505_251 {
-    width: 64px;
+    width: 200px;
     color: rgba(51,51,51,1);
     position: absolute;
     top: 291px;
@@ -152,7 +152,7 @@
 }
 
 .v4505_252 {
-    width: 89px;
+    width: 200px;
     color: rgba(51,51,51,1);
     position: absolute;
     top: 291px;
@@ -236,8 +236,36 @@
     opacity: 1;
     text-align: left;
 }
+..v0_47 {
+    width: 384px;
+    height: 44px;
+    background: rgba(243,243,243,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
 
 .name {
+    color: #fff;
+}
+
+.v0_49 {
+    width: 370px;
+    background: rgba(243,243,243,1);
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+    border: 0px none;
+    outline: none;
+}
+    .name {
     color: #fff;
 }
 

@@ -31,20 +31,20 @@
     <label class="v4505_445" for="emp_id" id="emp_id">EMP012345</label>  
 
     <div class="v4505_446"><div class="v4505_447">
-        <div class="v4505_448"></div>
+        <div class=""></div>
         <asp:Button ID="next" runat="server" class="v4505_449" Text="Next" OnClick="next_Click" />
         
         </div></div>
     <div class="v4505_497">
         <div class="v4505_498">
-            <div class="v4505_499"></div>
+            <div class=""></div>
             <asp:Button ID="prev" runat="server" Text="Previous" class="v4505_500" OnClick="prev_Click" />
             
         </div></div>
     <div class="v4505_501">
         <div class="v4505_502">
             <div class="v4505_503"></div>
-            <asp:Button ID="done" class="v4505_500" runat="server" Text="Done" OnClick="done_Click" />
+            <asp:Button ID="done" class="v4505_504" runat="server" Text="Done" OnClick="done_Click" />
             
         </div>
     </div>

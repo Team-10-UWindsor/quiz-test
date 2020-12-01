@@ -118,7 +118,7 @@
 }
 
 .v0_49 {
-    width: 384px;
+    width: 370px;
     background: rgba(243,243,243,1);
     position: absolute;
     top: 12px;
@@ -162,7 +162,7 @@
 }
 
 .v0_53 {
-    width: 384px;
+    width: 370px;
     background: rgba(243,243,243,1);
     position: absolute;
     top: 12px;
@@ -227,15 +227,21 @@
 
 .v0_58 {
     width: 384px;
+    height: 34px;
     background: rgba(255,110,56,1);
     position: absolute;
-    top: 8px;
-    left: 165px;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
     font-family: Arial;
     font-weight: normal;
     font-size: 16px;
     opacity: 1;
-    text-align: left;
+    text-align: center;
     color: mintcream;
     border: 0px none;
     outline: none;
