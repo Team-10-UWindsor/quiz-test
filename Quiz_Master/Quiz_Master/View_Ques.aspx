@@ -29,7 +29,7 @@
         <div class="v4505_555">
             <div class="v4505_556">
                 <div class="v4505_557"></div>
-                <asp:Button ID="publish" runat="server" class="v4505_558" Text="Publish" />
+                <asp:Button ID="publish" runat="server" class="v4505_558" Text="Publish" OnClick="publish_Click" />
                  
             </div></div>
         <!--
@@ -47,8 +47,8 @@
         <span class="v4505_590">Empoyee details</span>
 
         <div class="name"></div>
-        <span class="v4505_595">Quiz ID:</span>
-        <asp:Label ID="quiz_id" class="v4505_596" runat="server" Text="Quiz ID"></asp:Label>
+        <span class="v4505_595">Quiz:</span>
+        <asp:Label ID="Quiz_Name" class="v4505_596" runat="server" Text="Quiz"></asp:Label>
             
         
         <span class="v4505_604">Questions</span>
@@ -62,7 +62,8 @@
                           <ItemTemplate>
                               <table>
                                   <tr>
-                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='#'><%#Eval("Question_Description")%></asp:HyperLink></td>
+                                       
+                                      <td><asp:Label ID="emp_id" runat="server"><%#Eval("Question_Description")%></asp:Label></td>
                                       
                                       
                                       

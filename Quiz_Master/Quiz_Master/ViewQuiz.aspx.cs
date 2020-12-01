@@ -42,6 +42,7 @@ namespace Quiz_Master
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
+            Response.Redirect("Reports.aspx");
             //Session["Active_QuizID"] = LinkButton.Text;
             //Response.Write("<script>alert('"+Session["Active_QuizID"].ToString()+"')</script>");
         }

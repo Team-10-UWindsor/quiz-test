@@ -13,7 +13,7 @@ namespace Quiz_Master
     public partial class EmployerLogin : System.Web.UI.Page
     {
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
-        int checkbox_flag =0;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -29,8 +29,7 @@ namespace Quiz_Master
             {
                 string Employer_Name = string.Empty;
                 int Employer_Id;
-                if (checkbox_flag == 1)
-                {
+ 
                     try
                     {
                         SqlConnection con = new SqlConnection(strcon);
@@ -70,20 +69,10 @@ namespace Quiz_Master
                     {
                         Response.Write("<script>alert('" + ex.Message + " ');</script>");
                     }
-                }
-                else
-                {
-                    Response.Write("<script>alert('Please accept the term and condition by clicking the checkbox');</script>");
-                }
+           
             }
         }
 
-        protected void checkbox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkbox.Checked)
-            {
-                checkbox_flag = 1;
-            }
-        }
+       
     }
 }

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Arial&display=swap" rel="stylesheet" />
     <link href="QuizMain.css" rel="stylesheet" />
     <title>Quiz</title>
+    
 </head>
 <body>
     <form runat="server">
@@ -26,38 +27,9 @@
         <span class="v0_188">Participant details:</span>
         <span class="v0_177">Participant Name</span>
         <span class="v0_178">Participant ID</span>
-         <asp:Label ID="emp_name" class="v0_179" runat="server" Text="Participant_Name"></asp:Label>
-         <asp:Label ID="emp_id" class="v0_180" runat="server" Text="Participant_ID"></asp:Label>
+        <asp:Label ID="p_name" class="v0_179" runat="server" Text="Participant_Name"></asp:Label>
+        <asp:Label ID="p_id" class="v0_180" runat="server" Text="Participant_ID"></asp:Label>
        
-
-
-
-        <!--   <div>
-
-            <asp:Repeater ID="Repeater1" runat="server">
-            <ItemTemplate>
-                <table>
-                    <tr>
-                        <td><%#Eval("Question_Id")%>: <%#Eval("Question_Description") %></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:RadioButton ID="RadioButton1" runat="server" Text='<%#Eval("OptionA")%>' GroupName="option"/>
-                            <asp:RadioButton ID="RadioButton2" runat="server" Text='<%#Eval("OptionB")%>' GroupName="option"/>
-                            <asp:RadioButton ID="RadioButton3" runat="server" Text='<%#Eval("OptionC")%>' GroupName="option"/>
-                            <asp:RadioButton ID="RadioButton4" runat="server" Text='<%#Eval("OptionD")%>' GroupName="option"/>
-                            <br />                                                                                                                                      
-                         
-                        </td>
-                    </tr>
-
-                </table>
-
-            </ItemTemplate>
-
-        </asp:Repeater>
-
-        </div> -->
 
         <div class="v0_181">
             <div class="v0_182">
@@ -129,17 +101,26 @@
             <span class="v0_219">All Questions</span>
             <asp:ListBox ID="que_list" runat="server" style="line-height:2.2" Height="270px" Font-Bold="True" Font-Names="Verdana" Font-Size="Large" Font-Underline="False" ForeColor="#004DBF" AutoPostBack="True" BackColor="White" CssClass="lb_quelist" OnSelectedIndexChanged="que_list_SelectedIndexChanged" Width="365px"></asp:ListBox>
         </span>
-        <!--<span class="v0_193">The difference between simple interest and compound on Rs. 1200 for one year at 10% per annum reckoned half-yearly is ?</span>
-        <span class="v0_194">At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1348.32 in 2 years?</span>
-        <span class="v0_195">The compound interest on Rs. 30,000 at 7% per annum is Rs. 4347. The period (in years) is ?</span>
-        <span class="v0_196">What is the difference between the compound interests on Rs. 5000 for 1 years at 4% per annum compounded yearly and half-yearly?</span>-->
-       
-        <div class="v0_200"></div>
-
-        <span class="v0_201">Time Left:</span>
         
-        <label id="duration" class="v0_202">05:00</label>
-             <label  class="v0_217">mins</label>
+        <div class="v0_200"></div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <span class="v0_201">
+                        <asp:Label ID="timeleft" runat="server" Text="Time Left:"></asp:Label>
+                    </span>
+                    <span class="v0_202">
+                        <asp:Label ID="cdtimer" runat="server" Text=""></asp:Label>
+                    </span>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID ="duration_timer" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <asp:Timer ID="duration_timer" runat="server" Interval ="1000" OnTick="duration_timer_Tick"></asp:Timer>
+        </div>
+       
         <div class="name"></div>
         <div class="name"></div>
         <div class="name"></div>

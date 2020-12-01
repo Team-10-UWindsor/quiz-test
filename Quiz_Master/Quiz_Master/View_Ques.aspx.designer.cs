@@ -25,5 +25,6 @@ namespace Quiz_Master
         protected global::System.Web.UI.WebControls.Label emp_id;
         protected global::System.Web.UI.WebControls.Label emp_name;
         protected global::System.Web.UI.WebControls.Repeater Repeater_3;
+        protected global::System.Web.UI.WebControls.Label Quiz_Name;
     }
 }

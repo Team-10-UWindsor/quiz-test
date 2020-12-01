@@ -44,6 +44,7 @@ namespace Quiz_Master
                 cmd.ExecuteNonQuery();
 
                 Session["P_EMAIL"] = Participant_Email.Text.Trim();
+                Session["P_Name"] = Participant_name.Text.Trim();
 
                 if (con.State == ConnectionState.Open)
                 {
@@ -54,6 +55,7 @@ namespace Quiz_Master
             {
                 Response.Write("<script>alert('" + ex.Message + " ');</script>");
             }
+            
             Response.Write("<script>alert('Good luck for the quiz, " + Participant_name.Text.Trim() + "! ');</script>");
             Response.Redirect("Quiz_Main.aspx");
         }

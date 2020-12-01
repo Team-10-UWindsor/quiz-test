@@ -15,8 +15,8 @@ namespace Quiz_Master
             quiz_name.Visible = false;
             duration.Enabled = false;
             duration.Visible = false;
-            //emp_name.Text = Session["activeUser"].ToString();
-            //emp_id.Text = Session["activeUserId"].ToString();
+            emp_name.Text = Session["activeUser"].ToString();
+            emp_id.Text = Session["activeUserId"].ToString();
         }
 
         protected void next_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Quiz_Master
             }
             else if (report.Checked)
             {
-                Response.Redirect("Reports.aspx");
+                Response.Redirect("ViewQuiz.aspx");
             }
             else
             {

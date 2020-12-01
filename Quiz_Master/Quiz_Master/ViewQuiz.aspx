@@ -59,7 +59,7 @@
                           <ItemTemplate>
                               <table>
                                   <tr>
-                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='View_Ques.aspx?Quiz_Id=' ><%#Eval("Quiz_Name")%></asp:HyperLink></td>
+                                       <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='Reports.aspx?Quiz_Id=' ><%#Eval("Quiz_Name")%></asp:HyperLink></td>
                                       
                                       
                                       

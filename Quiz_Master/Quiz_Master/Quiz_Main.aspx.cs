@@ -20,10 +20,20 @@ namespace Quiz_Master
         static List<String> q_ans = new List<String>();
 
         static int count = 1;
+        static int hh, mm, ss;
+        static double seconds;
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            p_name.Text = Session["P_Name"].ToString();
+            p_id.Text = Session["P_EMAIL"].ToString();
+
             if (!Page.IsPostBack)
             {
+
+                p_name.Text = Session["P_Name"].ToString();
+                p_id.Text = Session["P_EMAIL"].ToString();
+
                 quiz = qds.fetchQuiz((int) Session["QID"]);
 
                 SqlConnection con = new SqlConnection(strcon);
@@ -47,11 +57,24 @@ namespace Quiz_Master
 
                 SqlCommand cmd = new SqlCommand("Insert into Quiz_Participant (Quiz_Id, Participant_Id) values (@qid, @pid)", con);
 
-                cmd.Parameters.AddWithValue("@qid", (int) Session["QID"]);
+                cmd.Parameters.AddWithValue("@qid", (int)Session["QID"]);
                 cmd.Parameters.AddWithValue("@pid", pid);
                 cmd.ExecuteNonQuery();
 
+                SqlCommand time = new SqlCommand("Select Quiz_Duration from Quiz where Quiz_Id = @quiz_id", con);
+                time.Parameters.AddWithValue("@quiz_id", Session["QID"].ToString());
+                SqlDataReader rd1 = time.ExecuteReader();
 
+                seconds = 60;
+                if (rd1.HasRows)
+                {
+                    while (rd1.Read())
+                    {
+                        //int min = (int)rd1[0];
+                        //seconds = min * 60;
+                    }
+                }
+                rd1.Close();
 
                 if (con.State == ConnectionState.Open)
                 {
@@ -157,7 +180,9 @@ namespace Quiz_Master
             eval.doEvaluate(q_ans, (int) Session["PID"], (int) Session["QID"]);
             //Response.Write("<script>alert('" + percent + "');</script>");
             Session.Clear();
-            Response.Redirect("Participant_Login.aspx");
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Thank you for participating in the Quiz!!');window.location ='Participant_Login.aspx';", true);
+            
         }
 
         protected void next_Click(object sender, EventArgs e)
@@ -261,6 +286,21 @@ namespace Quiz_Master
             {
                 showSelected();
             }
+        }
+
+       protected void duration_timer_Tick(object sender, EventArgs e)
+        {
+            if (seconds > 0)
+            {
+                seconds = seconds - 1;
+            }
+
+            TimeSpan time_Span = TimeSpan.FromSeconds(seconds);
+            hh = time_Span.Hours;
+            mm = time_Span.Minutes;
+            ss = time_Span.Seconds;
+
+            cdtimer.Text = " " + hh + ": " + mm + ": " + ss;
         }
     }
 }
