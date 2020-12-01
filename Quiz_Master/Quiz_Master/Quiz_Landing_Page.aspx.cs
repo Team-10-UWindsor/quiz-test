@@ -44,6 +44,7 @@ namespace Quiz_Master
                 cmd.ExecuteNonQuery();
 
                 Session["P_EMAIL"] = Participant_Email.Text.Trim();
+                Session["P_Name"] = Participant_name.Text.Trim();
 
                 if (con.State == ConnectionState.Open)
                 {

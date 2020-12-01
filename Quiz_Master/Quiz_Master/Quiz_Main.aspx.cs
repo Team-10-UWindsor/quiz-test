@@ -24,10 +24,16 @@ namespace Quiz_Master
         static double seconds;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+            p_name.Text = Session["P_Name"].ToString();
+            p_id.Text = Session["P_EMAIL"].ToString();
+
             if (!Page.IsPostBack)
             {
-                
+
+                p_name.Text = Session["P_Name"].ToString();
+                p_id.Text = Session["P_EMAIL"].ToString();
+
                 quiz = qds.fetchQuiz((int) Session["QID"]);
 
                 SqlConnection con = new SqlConnection(strcon);
@@ -64,8 +70,8 @@ namespace Quiz_Master
                 {
                     while (rd1.Read())
                     {
-                        int min = (int)rd1[0];
-                        seconds = min * 60;
+                        //int min = (int)rd1[0];
+                        //seconds = min * 60;
                     }
                 }
                 rd1.Close();

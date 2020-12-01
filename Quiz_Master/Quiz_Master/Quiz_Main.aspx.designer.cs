@@ -15,31 +15,22 @@ namespace Quiz_Master
     {
 
         /// <summary>
-        /// emp_name control.
+        /// p_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label emp_name;
+        protected global::System.Web.UI.WebControls.Label p_name;
 
         /// <summary>
-        /// emp_id control.
+        /// p_id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label emp_id;
-
-        /// <summary>
-        /// Repeater1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.Label p_id;
 
         /// <summary>
         /// done control.

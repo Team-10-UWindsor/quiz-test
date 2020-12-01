@@ -27,8 +27,8 @@
         <span class="v0_188">Participant details:</span>
         <span class="v0_177">Participant Name</span>
         <span class="v0_178">Participant ID</span>
-        <asp:Label ID="emp_name" class="v0_179" runat="server" Text="Participant_Name"></asp:Label>
-        <asp:Label ID="emp_id" class="v0_180" runat="server" Text="Participant_ID"></asp:Label>
+        <asp:Label ID="p_name" class="v0_179" runat="server" Text="Participant_Name"></asp:Label>
+        <asp:Label ID="p_id" class="v0_180" runat="server" Text="Participant_ID"></asp:Label>
        
 
         <div class="v0_181">

@@ -15,6 +15,24 @@ namespace Quiz_Master
     {
 
         /// <summary>
+        /// emp_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label emp_name;
+
+        /// <summary>
+        /// emp_id control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label emp_id;
+
+        /// <summary>
         /// next control.
         /// </summary>
         /// <remarks>
@@ -175,5 +193,14 @@ namespace Quiz_Master
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator optionDValidator;
+
+        /// <summary>
+        /// Quiz_Name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Quiz_Name;
     }
 }

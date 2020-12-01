@@ -18,10 +18,11 @@ namespace Quiz_Master
 
             emp_name.Text = Session["activeUser"].ToString();
             emp_id.Text = Session["activeUserId"].ToString();
+            //Quiz_Name.Text = Session["Quiz_Name"].ToString();
 
             if (!IsPostBack)
             {
-                String query = "SELECT Question_Description FROM   Question WHERE  Question_Id IN (SELECT Question_Id FROM[dbo].[Quiz_Question] Where Quiz_Id = " + (int)Session["Quiz_Id"] + ")";
+                String query = "SELECT Question_Description FROM   Question WHERE  Question_Id IN (SELECT Question_Id FROM[dbo].[Quiz_Question] Where Quiz_Id = 1)";
                 SqlConnection con = new SqlConnection(strcon);
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
                 
@@ -33,6 +34,13 @@ namespace Quiz_Master
 
 
             }
+        }
+
+        protected void publish_Click(object sender, EventArgs e)
+        {
+           // Response.Write("<script>alert('Quiz Created successfully')</script>");
+           // Response.Redirect("Dashboard.aspx");
+            ScriptManager.RegisterStartupScript(this, this.GetType(),"alert","alert('Quiz Created Successfully');window.location ='Dashboard.aspx';",true);
         }
     }
 }

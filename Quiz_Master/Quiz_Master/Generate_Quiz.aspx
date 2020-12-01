@@ -27,8 +27,10 @@
     </div>
     <span class="v4505_442">Employee Name</span>
     <span class="v4505_443">Employee ID</span>
-    <label class="v4505_444" for="emp_name" id="emp_name">Iron Man</label>
-    <label class="v4505_445" for="emp_id" id="emp_id">EMP012345</label>  
+        <asp:Label ID="emp_name" class="v4505_444" runat="server" Text="emp_name"></asp:Label>
+        <asp:Label ID="emp_id" class="v4505_445" runat="server" Text="Emp_id"></asp:Label>
+    
+    
 
     <div class="v4505_446"><div class="v4505_447">
         <div class="v4505_448"></div>
@@ -44,7 +46,7 @@
     <div class="v4505_501">
         <div class="v4505_502">
             <div class="v4505_503"></div>
-            <asp:Button ID="done" class="v4505_500" runat="server" Text="Done" OnClick="done_Click" />
+            <asp:Button ID="done" class="v4505_500" runat="server" Text="Done" OnClick="done_Click" OnClientClick="return confirm('Changes cannot be done after this point. Are you sure you want to continue to publish?');" />
             
         </div>
     </div>
@@ -124,8 +126,9 @@
     
             <span class="v4505_450">Empoyee details</span>
     <div class="name"></div>
-    <span class="v4505_483">Quiz ID:</span>
-    <span class="v4505_486">02345</span>
+    <span class="v4505_483">Quiz:</span>
+        <asp:Label ID="Quiz_Name"  class="v4505_486" runat="server" Text="Quiz_Name"></asp:Label>
+    
     <div class="v4505_725"></div>
             </form>
     </div>
